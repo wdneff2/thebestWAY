@@ -4,10 +4,9 @@ This files explores our preliminary plan as our group tackles the final project.
 
 ## Team: ##
 Our team is made up of 3 members (which has been approved though the professor and TA team), which is different than the typical team. As such, our roles are relatively different than a typical team. See below the distribution and responsibilities:
-
--Autumn:
--Will:
--Yuri:
+1.Autumn:
+2.Will:
+3.Yuri:
 
 ## Research Question(s):
 
