@@ -8,7 +8,10 @@ Our team is made up of 3 members (which has been approved though the professor a
 2. Will:
 3. Yuri:
 
-## Research Question(s):
+## Research Question(s): 
+After being able to explore the world or a desire to explore and travel after graduation, it is equally important that we are aware of the state of individual countries. Narrowing our scope down to Europe (due to both personal connections to the EU and it being a popular travel destination for many post-graduate plans), we want to explore the correlation between socioeconomic indicators and public health outcomes. Specifically our research aims to look at the following:
+1. How does socioedconomic indicators like GDP per capital and government health expenditure correlate to key public health outcomes like life expextancy and infant mortality across European countries?
+2. Are there regional disparities in health outcomes that persist even after accounting for economic factors?
 
 ## Datasets:
 
