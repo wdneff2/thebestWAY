@@ -31,27 +31,20 @@ Offers detailed health statistics for member countries, including life expectanc
 Focuses on high-quality data from 38+ countries, many of which overlap with World Bank data.
 Both datasets include country codes and time-series data, allowing for integration by country and year. This combination enables a robust cross-national analysis of how economic conditions relate to public health.
 ## Timeline:
-Dataset Identification
 
-Data Acquisiton
-
-Data Cleaning
-
-Data Integration
-
-Exploratory Data Analysis
-
-Interim Status Report Preparation
-
-Advanced Analysis & Visualization
-
-Interpretation of Findings
-
-Documentation & Reproducibility
-
-Final Report Writing & Review 
-
-Final Project Submission
+| Task | Description | Responsible Member(s)| Target Completion Date|
+| :---: | :---: | :---: | :---: |
+| Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | March 10 |
+| Data Acquisiton | Download selected datasets and document data provenance, liscensing, and metadata. | Will | March 10 |
+| Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | March 20 |
+| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that combined dataset is accurate and consistent. | Autumn | March 24 |
+| Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | March 27 |
+| Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | March 31 |
+| Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 15 |
+| Interpretation of Findings | Evaluate results and assess relationships between socioeconomic indicators and health outcomes. | Yuri, Autumn | April 22 |
+| Documentation & Reproducibility | Finalize code documentation, workflow description, and ensure reproducibility of the data pipeline. | Will | April 25 |
+| Final Report Writing & Review  | Compile analysis, visualizations, and discussion into the final project report and prepare GitHub release. | Yuri, Autumn, Will | May 1 |
+| Final Project Submission | Publish GitHub release and submit final project deliverables. | Yuri, Autumn, Will | May 3 |
 
 ## Constraints:
 
