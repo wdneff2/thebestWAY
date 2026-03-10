@@ -1,21 +1,21 @@
-This files explores our preliminary plan as our group tackles the final project. It is subject to change and alteration as we progress throughout the project but it will overall not deviate drastically from this layout.
+This file explores our preliminary plan as our group tackles the final project. It is subject to change and alteration as we progress throughout the project, but it will overall not deviate drastically from this layout.
 
 ## Overview: 
 The goal of this project is to analyze how socioeconomic factors influence public health outcomes across European countries. In particular, we are aiming to investigate whether indicators like GDP per capita and government health expenditure are associated with key health metrics such as life expectancy and infant mortality. Understanding these relationships highlights broader patterns between economic development and population health, as well as identify any regional disparities that might persist even among economically similar countries.
 
-To accomplish this, we will utilize publically available data from the World Bank Open Data portal and the OECD Data Portal, with the World Bank dataset offering broad socioeconomic indicators and the OECD dataset providing detailed health statistics. Because both datasets contain standardized country identifieers and time-series data, they can be linked by country and year to create a unified dataset for our analysis.
+To accomplish this, we will utilize publicly available data from the World Bank Open Data portal and the OECD Data Portal, with the World Bank dataset offering broad socioeconomic indicators and the OECD dataset providing detailed health statistics. Because both datasets contain standardized country identifiers and time-series data, they can be linked by country and year to create a unified dataset for our analysis.
 
-Our workflow will involved several stages. First, we have already acquired relevant datasets, documenting their origin, any transformations done to them, ownership, etc. Next, we will clean, standardize, and integrate the data to ensure any country identifiers and metrics are consistent. Once the combined dataset is constructed, we will perform exploratory data analysis and visualization to identify any trends and relationships in the data. Finally, we will interpret the results and communicate our finding through visualizations, written analysis, and a reproducible project repository. 
+Our workflow will involve several stages. First, we have already acquired relevant datasets, documenting their origin, any transformations done to them, ownership, etc. Next, we will clean, standardize, and integrate the data to ensure any country identifiers and metrics are consistent. Once the combined dataset is constructed, we will perform exploratory data analysis and visualization to identify any trends and relationships in the data. Finally, we will interpret the results and communicate our findings through visualizations, written analysis, and a reproducible project repository. 
 
 ## Team: ##
-Our team is made up of 3 members (which has been approved though the professor and TA team), which is different than the typical team. As such, our roles are relatively different than a typical team. See below the distribution and responsibilities:
+Our team is made up of 3 members (which has been approved through the professor and TA team), which is different than the typical team. As such, our roles are relatively different than a typical team. See below the distribution and responsibilities:
 1. Autumn: Data integration, Data quality assessment, Data cleaning, Data documentation and metadata, Extraction and enrichment
-2. Will: Data acquisition, Storage and organization strategy, Workflow automation and provenance, Reproducibility package, Git/GitHub repository setup and maintenance
+2. Will: Data acquisition, Storage, and organization strategy, Workflow automation and provenance, Reproducibility package, Git/GitHub repository setup and maintenance
 3. Yuri: Data analysis and visualization, Findings and interpretation, Overall project documentation, Ethical/legal compliance, Final report coordination and quality control
 
 ## Research Question(s): 
-After being able to explore the world or a desire to explore and travel after graduation, it is equally important that we are aware of the state of individual countries. Narrowing our scope down to Europe (due to both personal connections to the EU and it being a popular travel destination for many post-graduate plans), we want to explore the correlation between socioeconomic indicators and public health outcomes. Specifically our research aims to look at the following:
-1. How does socioeconomic indicators like GDP per capital and government health expenditure correlate to key public health outcomes like life expextancy and infant mortality across European countries?
+After being able to explore the world or having a desire to explore and travel after graduation, it is equally important that we are aware of the state of individual countries. Narrowing our scope down to Europe (due to both personal connections to the EU and it being a popular travel destination for many post-graduate plans), we want to explore the correlation between socioeconomic indicators and public health outcomes. Specifically, our research aims to look at the following:
+1. How do socioeconomic indicators like GDP per capita and government health expenditure correlate to key public health outcomes like life expectancy and infant mortality across European countries?
 2. Are there regional disparities in health outcomes that persist even after accounting for economic factors?
 
 ## Datasets:
@@ -25,7 +25,7 @@ World Bank Open Data (via https://data.worldbank.org/): Though these data sets a
 
 Contains development indicators for over 200 countries, including GDP per capita, health expenditure, and population statistics.
 Provides the socioeconomic context needed to analyze health outcomes.
-OECD Data Portal (via https://www.oecd.org/en/data.html): Similarly, the dataset itself is vast and through our investigation, we aim to narrow down on what is the specific data set that we will use.
+OECD Data Portal (via https://www.oecd.org/en/data.html): Similarly, the dataset itself is vast, and through our investigation, we aim to narrow down on what is the specific dataset that we will use.
 
 Offers detailed health statistics for member countries, including life expectancy, infant mortality, and healthcare access metrics.
 Focuses on high-quality data from 38+ countries, many of which overlap with World Bank data.
@@ -35,9 +35,9 @@ Both datasets include country codes and time-series data, allowing for integrati
 | Task | Description | Responsible Member(s)| Target Completion Date|
 | :---: | :---: | :---: | :---: |
 | Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | March 10 |
-| Data Acquisiton | Download selected datasets and document data provenance, liscensing, and metadata. | Will | March 10 |
+| Data Acquisition | Download selected datasets and document data provenance, licensing, and metadata. | Will | March 10 |
 | Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | March 20 |
-| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that combined dataset is accurate and consistent. | Autumn | March 24 |
+| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that the combined dataset is accurate and consistent. | Autumn | March 24 |
 | Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | March 27 |
 | Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | March 31 |
 | Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 15 |
@@ -47,12 +47,14 @@ Both datasets include country codes and time-series data, allowing for integrati
 | Final Project Submission | Publish GitHub release and submit final project deliverables. | Yuri, Autumn, Will | May 3 |
 
 ## Constraints:
+We identified the top 4 constraints in relation to our project plan below:
 1. Some countries or years within the dataset may have missing values for the different indicators. For example, life expectancy, infant mortality, or health expenditure may not be completely filled in.
 2. There may be minor dataset differences in how the values are reported. World Bank and OECD data may use different country names or indicator definitions. This will require standardization and merging.
 3. We can only analyze the data of overlapping years. Our datasets may cover different time ranges, so we won't be able to use all the data if that's the case.
 4. The analysis we conduct can help us identify correlations between socioeconomic factors and health outcomes, but we cannot establish causation.
 
 ## Gaps:
+We identified the top 4 gaps we plan on assessing as we begin our project within the next couple of weeks, below:
 1. The specific variables from each dataset still need to be chosen and finalized.
 2. We have to review which European countries are available within both datasets before we can finalize the exact set of European countries that will be included.
 3. Like above, we cannot determine the final analysis period until we find the overlapping years across our datasets.
