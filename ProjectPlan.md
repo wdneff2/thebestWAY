@@ -47,5 +47,13 @@ Both datasets include country codes and time-series data, allowing for integrati
 | Final Project Submission | Publish GitHub release and submit final project deliverables. | Yuri, Autumn, Will | May 3 |
 
 ## Constraints:
+1. Some countries or years within the dataset may have missing values for the different indicators. For example, life expectancy, infant mortality, or health expenditure may not be completely filled in.
+2. There may be minor dataset differences in how the values are reported. World Bank and OECD data may use different country names or indicator definitions. This will require standardization and merging.
+3. We can only analyze the data of overlapping years. Our datasets may cover different time ranges, so we won't be able to use all the data if that's the case.
+4. The analysis we conduct can help us identify correlations between socioeconomic factors and health outcomes, but we cannot establish causation.
 
 ## Gaps:
+1. The specific variables from each dataset still need to be chosen and finalized.
+2. We have to review which European countries are available within both datasets before we can finalize the exact set of European countries that will be included.
+3. Like above, we cannot determine the final analysis period until we find the overlapping years across our datasets.
+4. The team has not yet chosen which statistical techniques and visualization methods we will be using.
