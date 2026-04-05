@@ -19,17 +19,18 @@ After being able to explore the world or having a desire to explore and travel a
 2. Are there regional disparities in health outcomes that persist even after accounting for economic factors?
 
 ## Datasets:
-We will use two datasets that complement each other and can be integrated based on country and year:
+We will use two datasets that complement each other and can be integrated based on country and year. While important to see changes in time, a lot happens over the course of time especially in the EU and so for relavancy, we will only be looking at the most recent 10 years of data points. The most recent 10 years and only looking at EU countries:
 
-World Bank Open Data (via https://data.worldbank.org/): Though these data sets are vast, our investigation will be looking at different aspects of them
+__World Bank Open Data (via https://data.worldbank.org/)__: Though these data sets are vast, our investigation will be looking at different aspects of them. They contain development indicators for over 200 countries, including GDP per capita, health expenditure, and population statistics. It also provides the socioeconomic context needed to analyze health outcomes.
 
-Contains development indicators for over 200 countries, including GDP per capita, health expenditure, and population statistics.
-Provides the socioeconomic context needed to analyze health outcomes.
-OECD Data Portal (via https://www.oecd.org/en/data.html): Similarly, the dataset itself is vast, and through our investigation, we aim to narrow down on what is the specific dataset that we will use.
+Specifically within the World Bank Open Data, we will be using World Development Indicators (WDI) (with the Searchable API of https://raw.githubusercontent.com/worldbank/open-api-specs/refs/heads/main/Data360%20Open_API.json). This dataset is the primary World Bank collection of development indicators, compiled from officially-recognized international sources. It presents the most current and accurate global development data available, and includes national, regional and global estimates. We can use these indicators (financial and explorations of nonfinancial ones) against the health factors to plot out how different countries in the EU compare.
 
-Offers detailed health statistics for member countries, including life expectancy, infant mortality, and healthcare access metrics.
-Focuses on high-quality data from 38+ countries, many of which overlap with World Bank data.
-Both datasets include country codes and time-series data, allowing for integration by country and year. This combination enables a robust cross-national analysis of how economic conditions relate to public health.
+__OECD Data Portal (via https://www.oecd.org/en/data.html)__: Similarly, the dataset itself is vast, and through our investigation, we aim to narrow down on what is the specific dataset that we will use. It offers detailed health statistics for member countries, including life expectancy, infant mortality, and healthcare access metrics.
+
+Specfically within the OECD Data Portal, we will cross reference a couple of different indicators. Those being health spending (https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.JAI/DSD_TAXBEN_PTR@DF_PTRUB/1.0?references=all) and doctors per capita (https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.HD/DSD_HEALTH_EMP_REAC@DF_PHYS/1.0?references=all). These can help us discover unique patterns beteen the relative scope of health within a country and other socioeconomic development indicators in the EU.
+
+All these datasets have different column and display different information, but it is important that we are able to convene these sets based on the standaraized name of the country as well as the year. For example both sets use the name "Austria" and label their years in the same manner so that we are able to converge the datasets and clean it. There is no additional steps needed as the labeling is consistent meaning that joining the individual sets will be seemless and easy. 
+
 ## Timeline:
 
 | Task | Description | Responsible Member(s)| Target Completion Date|
