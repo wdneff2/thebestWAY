@@ -56,8 +56,6 @@
 
 <!-- * Summarize any challenges or problems you have encountered so far. For each issue, explain how you resolved it or describe your plan to address it in the near future. -->
 
-## Challenges & Problems
-
 ### Challenge 1: Narrowing Down Datasets and Indicators
 
 - **Description:** We originally provided larger data collections with the intent of narrowing them
@@ -84,7 +82,7 @@
   Offers detailed health statistics for member countries, including life expectancy, infant
   mortality, and healthcare access metrics.
 
-  - Specifically, we will cross-reference two indicators:
+  - Specifically, we will cross-reference two indicators within the OECD Data Portal:
     - [Health Spending](https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.JAI/DSD_TAXBEN_PTR@DF_PTRUB/1.0?references=all)
     - [Doctors per Capita](https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.HD/DSD_HEALTH_EMP_REAC@DF_PHYS/1.0?references=all)
 
