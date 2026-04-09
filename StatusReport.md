@@ -95,6 +95,17 @@
 
   >**Project Plan Note:** This update is reflected within our Project Plan as well
 
+  ### Challenge 2: Potential Computational Overload from Large Datasets
+
+- **Description:** Since we are interacting with a large number of datasets, we anticipate that
+  cleaning and analyzing the data may overload our computers.
+
+- **Resolution / Plan:** To preemptively address this, we have decided to use **OpenRefine**
+  (that to which we learned from our Lab 11) to clean the data, fuse the datasets together,
+  and then export the result to another platform for manipulation and insight discovery.
+  This approach offloads the heavy data processing from our local machines and gives us a
+  clean, unified dataset to work with before any analysis begins.
+
 ---
 
 ## Team Contributions
