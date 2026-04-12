@@ -35,15 +35,15 @@ All these datasets have different columns and display different information, but
 
 | Task | Description | Responsible Member(s)| Target Completion Date|
 | :---: | :---: | :---: | :---: |
-| Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | March 10 |
-| Data Acquisition | Download selected datasets and document data provenance, licensing, and metadata. | Will | March 10 |
+| Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | March 15 |
+| Data Acquisition | Download selected datasets and document data provenance, licensing, and metadata. | Will | March 15 |
 | Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | March 20 |
-| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that the combined dataset is accurate and consistent. | Autumn | March 24 |
-| Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | March 27 |
-| Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | March 31 |
-| Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 15 |
-| Interpretation of Findings | Evaluate results and assess relationships between socioeconomic indicators and health outcomes. | Yuri, Autumn | April 22 |
-| Documentation & Reproducibility | Finalize code documentation, workflow description, and ensure reproducibility of the data pipeline. | Will | April 25 |
+| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that the combined dataset is accurate and consistent. | Autumn | March 31 |
+| Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | April 10 |
+| Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | April 14 |
+| Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 20 |
+| Interpretation of Findings | Evaluate results and assess relationships between socioeconomic indicators and health outcomes. | Yuri, Autumn | April 25 |
+| Documentation & Reproducibility | Finalize code documentation, workflow description, and ensure reproducibility of the data pipeline. | Will | April 30 |
 | Final Report Writing & Review  | Compile analysis, visualizations, and discussion into the final project report and prepare GitHub release. | Yuri, Autumn, Will | May 1 |
 | Final Project Submission | Publish GitHub release and submit final project deliverables. | Yuri, Autumn, Will | May 3 |
 
@@ -55,7 +55,7 @@ We identified the top 4 constraints in relation to our project plan below:
 4. The analysis we conduct can help us identify correlations between socioeconomic factors and health outcomes, but we cannot establish causation.
 
 ## Gaps:
-We identified the top 4 gaps we plan on assessing as we begin our project within the next couple of weeks, below:
+We identified the top 4 gaps we plan on assessing as we begin our project within the next couple of weeks below:
 1. The specific variables from each dataset still need to be chosen and finalized.
 2. We have to review which European countries are available within both datasets before we can finalize the exact set of European countries that will be included.
 3. Like above, we cannot determine the final analysis period until we find the overlapping years across our datasets.
