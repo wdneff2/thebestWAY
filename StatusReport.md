@@ -31,7 +31,7 @@
 
 | Task | Owner | Original Due Date | Updated Due Date | Status |
 |------|-------|:-----------------:|:----------------:|--------|
-| [Task 1] | Autumn | | | 🟡 In Progress |
+| Data Integration | Autumn | | | 🟡 In Progress |
 | [Task 2] | | | | ✅ Complete |
 | [Task 3] | | | | 🔴 Blocked |
 | [Task 4] | | | | ⬜ Not Started |
