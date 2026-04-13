@@ -31,10 +31,12 @@
 
 | Task | Owner | Original Due Date | Updated Due Date | Status |
 |------|-------|:-----------------:|:----------------:|--------|
-| Data Integration | Autumn | | | 🟡 In Progress |
-| [Task 2] | | | | ✅ Complete |
-| [Task 3] | | | | 🔴 Blocked |
-| [Task 4] | | | | ⬜ Not Started |
+| Dataset Identification | Will | | | ✅ Complete |
+| Data Acquisition | Autumn | | | ✅ Complete |
+| Data Cleaning | Autumn | | | 🟡 In Progress |
+| Data Integration | Will | | | ⬜ Not Started |
+| Exploratory Data Analysis | Yuri | | | ⬜ Not Started |
+| Interim Status Report | Team | | | 🟡 In Progress |
 
 ---
 
@@ -121,7 +123,7 @@
 
 ### Autumn
 
-> Task 1: Data Integration
+> Focused on data integration and cleaning. Helped determine how the datasets will be merged using country and year, narrowed the scope to EU countries and recent data, and planned the use of OpenRefine to standardize and clean the data before merging.
 
 ### Will
 
