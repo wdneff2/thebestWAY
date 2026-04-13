@@ -44,7 +44,10 @@
 
 ### Changes to Scope / Approach
 
-- 
+- Compared with our original project plan, we have narrowed our approach by focusing specifically on EU countries and the most recent 10 years of overlapping data. Before, we were trying to work with the full historical span of both sources, but we found this to be too much. Now we feel at ease with our project manageability, and this will help improve comparability between the datasets.
+- Additionally, we narrowed down our integration approach. We decided to merge primarily on country and year, and to use OpenRefine to standardize labels and prepare the datasets before analysis. Our original plan was too broad, and this is our way of narrowing down data cleaning.
+
+
 
 ### Changes Based on Milestone 2 Feedback
 
