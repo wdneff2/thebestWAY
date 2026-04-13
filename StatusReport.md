@@ -7,10 +7,10 @@
 
 <!-- * An update on each of the tasks described on your project plan including references and links to specific artifacts in your repository (such as datasets, scripts, workflows, workflow diagrams, etc). -->
 
-- **Task 1: [Task Name]**
-  - Status: 
-  - Updates: 
-  - References: [Script name](link) | [Dataset](link) | [Workflow](link)
+- **Task 1: Data Integration**
+  - Status: 🟡 In Progress
+  - Updates: We are using two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators.
+  - References: OpenRefine workflow | World Bank WDI | OECD indicators
 
 - **Task 2: [Task Name]**
   - Status: 
