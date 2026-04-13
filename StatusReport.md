@@ -136,7 +136,7 @@
 
 ### Autumn
 
-> Focused on data integration and cleaning. Helped determine how the datasets will be merged using country and year, narrowed the scope to EU countries and recent data, and planned the use of OpenRefine to standardize and clean the data before merging.
+> Focused on data acquisition, cleaning, and integration. Identified and selected relevant indicators from the World Bank WDI and OECD datasets, including GDP per capita, government health expenditure, and health-related metrics. Developed the integration plan by determining that datasets will be merged using country and year, narrowed the scope to EU countries and the most recent 10 years, and planned the use of OpenRefine to standardize country names, variable formats, and prepare the data for merging.
 
 ### Will
 
