@@ -118,7 +118,7 @@
 
 ### Autumn
 
-> For Autumn to fill out
+> Task 1: Data Integration
 
 ### Will
 
