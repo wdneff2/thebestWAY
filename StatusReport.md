@@ -9,7 +9,10 @@
 
 - **Task 1: Data Integration**
   - Status: 🟡 In Progress
-  - Updates: We are using two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators.
+  - Updates: We narrowed our integration plan to two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators. Our goal is to combine the economic and public health data for EU countries using unique identifiers found in both datasets. This means that both datasets have the same variable that we can use to match rows.
+
+For this merge, we are planning
+
   - References: OpenRefine workflow | World Bank WDI | OECD indicators
 
 - **Task 2: [Task Name]**
