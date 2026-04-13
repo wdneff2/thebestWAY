@@ -31,7 +31,7 @@
 
 | Task | Owner | Original Due Date | Updated Due Date | Status |
 |------|-------|:-----------------:|:----------------:|--------|
-| [Task 1] | | | | 🟡 In Progress |
+| [Task 1] | Autumn | | | 🟡 In Progress |
 | [Task 2] | | | | ✅ Complete |
 | [Task 3] | | | | 🔴 Blocked |
 | [Task 4] | | | | ⬜ Not Started |
