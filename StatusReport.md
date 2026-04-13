@@ -11,7 +11,11 @@
   - Status: 🟡 In Progress
   - Updates: We narrowed our integration plan to two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators. Our goal is to combine the economic and public health data for EU countries using unique identifiers found in both datasets. This means that both datasets have the same variable that we can use to match rows.
 
-For this merge, we are planning
+For this merge, we are planning to use the country name as the main key and the year as the secondary key. This way, everything lines up over time.
+
+From the World Bank, we are planning to use GDP per capita and government health expenditure. From the OECD, we are planning to use things like health spending and doctors per capita. If possible, we might also include variables like life expectancy or infant mortality, depending on how complete the data is across both sources.
+
+
 
   - References: OpenRefine workflow | World Bank WDI | OECD indicators
 
