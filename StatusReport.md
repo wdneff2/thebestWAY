@@ -32,7 +32,7 @@
  
 - **Task 5: Interim Status Report - Team**
   - **Status:** In Progress
-  - **Updates:** 
+  - **Updates:** None, waiting for task 3-4 to be complete.
   - **References:** [Workflow Diagram](link) | [Script](link)
 
 <!-- Add more tasks as needed -->
