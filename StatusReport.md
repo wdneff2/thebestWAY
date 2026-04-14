@@ -9,8 +9,7 @@
 
 - **Task 1: Dataset Identification - Will**
   - **Status:** Complete
-  - **Updates:** 
-  - **References:** [Workflow Diagram](link) | [Script](link)
+  - **Updates:** Based on the question that we proposed, our group discovered that we needed separate datasets related to health as well as development indicators. While there are a lot of indicators related to representing the state of a country regarding its health, we tried to find some interesting indicators that are related to health — those being the number of doctors and money spent. With that, there is a large set of indicators that we can further examine in their interaction with the health indicators. Things like GDP, life expectancy, and crime rate are all factors that we could look at in relation to health.
 
 
 - **Task 2: Data Acquisition - Autumn**
