@@ -1,5 +1,5 @@
 # Milestone Report
-> This report serves as an update the to Project plan in regards to any progress that is made towards to the final submision in regards to the project
+> This report serves as an update the to Project plan in regards to any progress that is made towards to the final submision
 
 ---
 
