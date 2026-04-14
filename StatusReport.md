@@ -47,8 +47,8 @@
 | :---: | :---: | :---: | :---: |
 | Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | Complete |
 | Data Acquisition | Download selected datasets and document data provenance, licensing, and metadata. | Will | Complete |
-| Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | March 20 |
 | Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | Complete |
+| Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | April 15 |
 | Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that the combined dataset is accurate and consistent. | Autumn | April 17 |
 | Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | April 20 |
 | Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 23 |
