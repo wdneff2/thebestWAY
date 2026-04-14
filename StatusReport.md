@@ -8,30 +8,30 @@
 <!-- * An update on each of the tasks described on your project plan, including references and links to specific artifacts in your repository (such as datasets, scripts, workflows, workflow diagrams, etc). -->
 
 - **Task 1: Dataset Identification - Will**
-  - **Status:** ✅ Complete
+  - **Status:** Complete
   - **Updates:** 
   - **References:** [Workflow Diagram](link) | [Script](link)
 
 
 - **Task 2: Data Acquisition - Autumn**
-  - **Status:** ✅ Complete
+  - **Status:** Complete
   - **Updates:** We identified and obtained the datasets needed for our project from the World Bank Open Data portal and the OECD Data Portal. Specifically, we selected relevant indicators such as GDP per capita and government health expenditure from the World Bank World Development Indicators (WDI), along with health-related indicators such as health spending and doctors per capita from the OECD.
   - We ensured that both datasets contain country-level and year-based data so they can be integrated in later stages of the project. Additionally, we confirmed that the datasets are accessible, relevant to our research question, and suitable for further cleaning and analysis.
   - **References:** World Bank WDI | OECD Data Portal
 
 - **Task 3: Data Cleaning & Integration - Autumn**
-  - **Status:** 🟡 In Progress
+  - **Status:** In Progress
   - **Updates:** We narrowed our integration plan to two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators. Our goal is to combine the economic and public health data for EU countries using shared identifiers found in both datasets. For this merge, we are planning to use the country name as the main key and the year as the secondary key so that all data aligns over time. From the World Bank, we are planning to use GDP per capita and government health expenditure, while from the OECD, we will use indicators such as health spending and doctors per capita. We may also include variables like life expectancy or infant mortality, depending on data completeness. To maintain consistency, we are focusing only on EU countries and the most recent 10 years where both datasets overlap.
   - Before merging, we will clean and standardize the data to ensure compatibility between the datasets. Variable names and formats may differ slightly, so we will need to align country names, rename columns where necessary, and ensure year formats are consistent. To do this, we will use OpenRefine, which we found helpful for identifying inconsistencies such as formatting issues, duplicates, and variations in naming. After cleaning, we will export the data as a standardized CSV file and use it for further analysis and visualization.
   - **References:** OpenRefine workflow | World Bank WDI | OECD indicators
  
 - **Task 4: Exploratory Data Analysis - Yuri, Will**
-  - **Status:** ⬜ Not Started
+  - **Status:** Not Started
   - **Updates:** As Task 3 is still in progress, we have been unable to begin Task 4. Delays are due to just recently updating our Project Plan, addressing comments left by the TA, as well as very recently learning how to use OpenRefine, which we plan to use for Task 3. 
   - **References:** [Workflow Diagram](link) | [Script](link)
  
 - **Task 5: Interim Status Report - Team**
-  - **Status:** 🟡 In Progress
+  - **Status:** In Progress
   - **Updates:** 
   - **References:** [Workflow Diagram](link) | [Script](link)
 
@@ -72,17 +72,46 @@
 
 ### Changes Based on Milestone 2 Feedback
 
-- TA Comment: The files are uploaded as zip on github, where as you should directly upload the markdown.
-  - How we addressed it:
-- TA Comment: What is the extent of the overlap in time/country coverage across both datasets?
-  - How we addressed it: 
-- TA Comment: How far back does this data go? This is critical to assess the feasibility and scope of the project for a 3 person team.
-- TA Comment: Same for timeline/task distribution. Gaps should be grounded in course content too. 
-- TA Comment: Datasets need review. 
+In response to our TA’s feedback, we made several important updates to improve both the technical setup and overall feasibility of our project.
+
+**GitHub Submission Fix**
+- Updated our repository to upload the raw `.md` file directly instead of a zipped folder  
+- This ensures our project materials are easily viewable and aligned with submission expectations  
+
+**Data Coverage & Feasibility**
+- Investigated the temporal and country overlap between the World Bank WDI and OECD datasets  
+- Found that:
+  - Both datasets extend back to approximately the 1960s  
+  - Coverage varies depending on the specific indicator and country  
+  - OECD data is limited to member countries, while WDI has broader global coverage  
+
+**Scope Refinement**
+- To ensure feasibility for a 3-person team, we:
+  - Limited our analysis to EU countries  
+  - Focused on the most recent 10 years of overlapping data  
+- This reduces missing data issues and simplifies dataset integration
+
+**Grounding in Course Concepts**
+- Explicitly incorporated key data concepts into our plan:
+  - Completeness: addressing missing values across datasets  
+  - Consistency: aligning country names and indicator definitions  
+  - Integration constraints: restricting analysis to overlapping years and countries  
+
+**Timeline & Task Updates**
+- Met with the TA after class to clarify feedback regarding timeline and task distribution  
+- While the concern was that responsibilities and deadlines were unclear, our existing timeline already specified this information  
+- After reviewing it, the TA acknowledged the clarity and verbally retracted that portion of the comment  
+- As a result, task distribution has remained the same, with only minor adjustments to due dates to account for delays  
+
+Overall, these changes make our project more structured, feasible, and better aligned with course expectations.
 
 ### Progress Summary
 
-> Brief narrative of where the project stands overall.
+At this stage, our project has completed the dataset identification and data acquisition phases, and is currently in the data cleaning and integration stage. We have finalized our use of the World Bank World Development Indicators (WDI) and OECD Data Portal datasets, selecting key indicators such as GDP per capita, government health expenditure, health spending, and doctors per capita.
+
+After incorporating TA feedback and reassessing feasibility, we refined our project scope to focus specifically on EU countries and the most recent 10 years of overlapping data. This change allowed us to better address issues related to data completeness and consistency, while also making the project more manageable for a 3-person team. We also clarified our integration approach by standardizing our process to merge datasets using country and year as shared identifiers, and began using OpenRefine to clean and align the data prior to merging.
+
+Currently, data cleaning is still in progress, which has delayed the start of exploratory data analysis. However, we now have a more structured workflow, clearer scope, and defined toolset moving forward. Once cleaning and integration are completed, we will begin exploratory data analysis and visualization to identify trends and relationships between socioeconomic indicators and public health outcomes across EU countries. 
 
 ---
 
@@ -144,7 +173,7 @@
 
 ## Team Contributions
 
-> ⚠️ Each team member must **individually commit** their own contribution summary to the repo.
+>  Each team member must **individually commit** their own contribution summary to the repo.
 
 ### Autumn
 
@@ -156,4 +185,4 @@
 
 ### Yuri
 
->For Yuri
+> I have primarily worked on shaping the analytical direction and overall structure of the project. I've been responsible for organizing and drafting key components of the project documentation, most notably the project's timeline. I also played a central role in meeting with the TA after class to clarify the project scope, feasibility, and alignment with course concepts, and communicating her expectations with the rest of the team. Looking ahead, I will lead the exploratory data analysis, visualization, and interpretation phases of the project after data cleaning and integration is complete. This includes identifying trends, building visualizations to communicate findings, and connecting results back to the research questions. 
