@@ -28,12 +28,12 @@
 - **Task 4: Exploratory Data Analysis - Yuri, Will**
   - **Status:** Not Started
   - **Updates:** As Task 3 is still in progress, we have been unable to begin Task 4. Delays are due to just recently updating our Project Plan, addressing comments left by the TA, as well as very recently learning how to use OpenRefine, which we plan to use for Task 3. 
-  - **References:** [Workflow Diagram](link) | [Script](link)
+  - **References:** N/A
  
 - **Task 5: Interim Status Report - Team**
   - **Status:** In Progress
   - **Updates:** None, waiting for task 3-4 to be complete.
-  - **References:** [Workflow Diagram](link) | [Script](link)
+  - **References:** N/A
 
 <!-- Add more tasks as needed -->
 
