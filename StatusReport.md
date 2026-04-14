@@ -17,13 +17,18 @@
   - **Status:** Complete
   - **Updates:** We identified and obtained the datasets needed for our project from the World Bank Open Data portal and the OECD Data Portal. Specifically, we selected relevant indicators such as GDP per capita and government health expenditure from the World Bank World Development Indicators (WDI), along with health-related indicators such as health spending and doctors per capita from the OECD.
   - We ensured that both datasets contain country-level and year-based data so they can be integrated in later stages of the project. Additionally, we confirmed that the datasets are accessible, relevant to our research question, and suitable for further cleaning and analysis.
-  - **References:** World Bank WDI | OECD Data Portal
+  - **References:** [World Bank GDP per capita](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD) | 
+[World Bank Health Expenditure](https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS) | 
+[OECD Health Spending](https://data-explorer.oecd.org/) | 
+[OECD Doctors per Capita](https://data-explorer.oecd.org/)
 
 - **Task 3: Data Cleaning & Integration - Autumn**
   - **Status:** In Progress
   - **Updates:** We narrowed our integration plan to two primary data sources: the World Bank World Development Indicators (WDI) dataset and selected OECD health indicators. Our goal is to combine the economic and public health data for EU countries using shared identifiers found in both datasets. For this merge, we are planning to use the country name as the main key and the year as the secondary key so that all data aligns over time. From the World Bank, we are planning to use GDP per capita and government health expenditure, while from the OECD, we will use indicators such as health spending and doctors per capita. We may also include variables like life expectancy or infant mortality, depending on data completeness. To maintain consistency, we are focusing only on EU countries and the most recent 10 years where both datasets overlap.
   - Before merging, we will clean and standardize the data to ensure compatibility between the datasets. Variable names and formats may differ slightly, so we will need to align country names, rename columns where necessary, and ensure year formats are consistent. To do this, we will use OpenRefine, which we found helpful for identifying inconsistencies such as formatting issues, duplicates, and variations in naming. After cleaning, we will export the data as a standardized CSV file and use it for further analysis and visualization.
-  - **References:** OpenRefine workflow | World Bank WDI | OECD indicators
+  - **References:** [OpenRefine](https://openrefine.org/) | 
+[World Bank WDI](https://data.worldbank.org/) | 
+[OECD Data Explorer](https://data-explorer.oecd.org/)
  
 - **Task 4: Exploratory Data Analysis - Yuri, Will**
   - **Status:** Not Started
