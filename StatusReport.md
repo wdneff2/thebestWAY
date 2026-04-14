@@ -39,17 +39,23 @@
 
 ---
 
-## Updated Timeline
+## Updated Timeline:
 
 <!-- * An updated timeline indicating the status of each task and when they will be completed. -->
 
-| Task | Owner | Original Due Date | Updated Due Date | Status |
-|------|-------|:-----------------:|:----------------:|--------|
-| Dataset Identification | Will | | | ✅ Complete |
-| Data Acquisition | Autumn | | | ✅ Complete |
-| Data Cleaning & Integration | Autumn | | | 🟡 In Progress |
-| Exploratory Data Analysis | Yuri, Will | | | ⬜ Not Started |
-| Interim Status Report | Team | | | 🟡 In Progress |
+| Task | Description | Responsible Member(s)| Target Completion Date|
+| :---: | :---: | :---: | :---: |
+| Dataset Identification | Identify relevant indicators from the World Bank and OECD databases. | Autumn, Will | Complete |
+| Data Acquisition | Download selected datasets and document data provenance, licensing, and metadata. | Will | Complete |
+| Data Cleaning | Standardize country names/codes, remove inconsistent records, and prepare datasets for integration. | Autumn | March 20 |
+| Interim Status Report Preparation | Summarize progress, challenges, and preliminary insights for the course milestone. | Yuri, Autumn, Will | Complete |
+| Data Integration | Merge datasets using shared identifiers such as country and year, ensuring that the combined dataset is accurate and consistent. | Autumn | April 17 |
+| Exploratory Data Analysis | Conduct initial statistical exploration and produce preliminary visualizations to identify trends or correlations. | Yuri | April 20 |
+| Analysis & Data Visualization | Develop deeper statistical analysis and improved visualizations to answer the research questions. | Yuri | April 23 |
+| Interpretation of Findings | Evaluate results and assess relationships between socioeconomic indicators and health outcomes. | Yuri, Autumn | April 26 |
+| Documentation & Reproducibility | Finalize code documentation, workflow description, and ensure reproducibility of the data pipeline. | Will | April 30 |
+| Final Report Writing & Review  | Compile analysis, visualizations, and discussion into the final project report and prepare GitHub release. | Yuri, Autumn, Will | May 1 |
+| Final Project Submission | Publish GitHub release and submit final project deliverables. | Yuri, Autumn, Will | May 3 |
 
 ---
 
