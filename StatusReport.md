@@ -181,7 +181,7 @@ Currently, data cleaning is still in progress, which has delayed the start of ex
 
 ### Will
 
-> For will
+> Throughout the project, I have taken on several tasks to help us reach the specified checkpoints as well as progress towards the overall completion of the project. Most notably, I played a critical role in setting up the templates for both the Project Plan and Status Report. I set up the template based on the requirements from the Canvas page so that the rest of the group could easily fill in their respective components. Beyond the templates, I, with guidance from the team, selected our research question and the datasets that we are to use. Looking forward, I will continue to build the template that our team will use for the final project submission as well as summarize and aggregate all the data findings done by my teammates. Collaboratively, our team will create a final product that explores the relationship between health-related indicators and development indicators in the EU.
 
 ### Yuri
 
