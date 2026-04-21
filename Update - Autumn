@@ -1,0 +1,10 @@
+Merged dataset:
+Focused on data acquisition, cleaning, and integration. Identified and selected relevant indicators from the World Bank WDI and OECD datasets, including GDP per capita, government health expenditure, health spending, and doctors per capita. Developed and implemented the integration plan by merging datasets using shared identifiers (country and year). Data cleaning was completed using OpenRefine to standardize country names, resolve inconsistencies (e.g., “Slovak Republic” vs. “Slovakia”), and ensure compatibility across datasets.
+
+The scope was narrowed to EU countries; however, due to limited overlap across datasets, the final integrated dataset includes 25 countries and 4 years of data rather than the originally planned 10 years. Despite this limitation, the dataset is fully clean, consistent, and suitable for analysis, with no missing values after integration.
+
+Scatter plot:
+The scatterplot shows a positive relationship between GDP per capita and doctors per capita. Countries with lower GDP per capita tend to have fewer doctors, while wealthier countries generally have more doctors available. This suggests that economic wealth is associated with better healthcare access. However, the relationship is not perfectly linear, as some high-income countries show variation in the number of doctors, indicating that additional factors may also influence healthcare access.
+
+Correlation:
+The correlation between GDP per capita and doctors per capita is 0.77579, indicating a strong positive relationship. This means that as a country’s economic wealth increases, the number of doctors per capita also tends to increase. While the relationship is not perfect, the high correlation supports the pattern observed in the scatterplot, suggesting that wealthier countries generally have better access to healthcare resources.
