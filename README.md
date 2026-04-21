@@ -8,174 +8,248 @@
 ---
 
 ## Summary
-<!-- 500–600 words -->
+<!-- Target: 500–600 words -->
 
-[Describe your project here. Cover:
-- What is the project about?
-- What motivated you to pursue this topic?
-- What research question(s) are you trying to answer?
-- What did you find (high-level)?]
+### Motivation
+[Why did you choose this topic? What problem or gap does it address?]
+
+### Research Questions
+1. [Research question 1]
+2. [Research question 2]
+
+### Overview
+[Briefly describe your approach — what data did you use, what methods, and what did you do overall?]
+
+### Key Findings
+[High-level summary of what you found. You'll elaborate in the Findings section.]
 
 ---
 
 ## Data Profile
-<!-- Max 2000 words total across all datasets -->
+<!-- Target: max 2,000 words total across all datasets -->
 
-### Dataset 1: [Dataset Name]
+### Dataset 1: [Name]
 
-- **Location in repository:** `data/raw/dataset1/`
-- **Source:** [URL or citation]
-- **Format:** [e.g., CSV, JSON, SQL dump]
-- **Size:** [e.g., 50,000 rows × 12 columns]
-- **Description:** [What does this dataset contain? What time period or scope does it cover?]
-- **Key fields/variables:**
-  | Field | Type | Description |
-  |-------|------|-------------|
-  | `field_name` | string | Description |
-  | `field_name` | integer | Description |
-- **Ethical/legal constraints:** [e.g., license type, privacy considerations, redistribution restrictions]
-- **Relevance to research questions:** [How does this dataset help answer your questions?]
+| Attribute | Detail |
+|-----------|--------|
+| **Source** | [URL or citation] |
+| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **Location in repo** | `data/raw/dataset1/` |
+| **Format** | [e.g., CSV, JSON, Parquet] |
+| **Size** | [e.g., 45,000 rows × 14 columns, ~12MB] |
+| **Date range / scope** | [e.g., 2018–2023, United States only] |
 
-### Dataset 2: [Dataset Name]
+**Description:**
+[What does this dataset contain? Where does it come from? Who collected it and for what purpose?]
 
-- **Location in repository:** `data/raw/dataset2/`
-- **Source:** [URL or citation]
-- **Format:** [e.g., CSV, JSON, SQL dump]
-- **Size:** [e.g., 10,000 rows × 8 columns]
-- **Description:** [What does this dataset contain?]
-- **Key fields/variables:**
-  | Field | Type | Description |
-  |-------|------|-------------|
-  | `field_name` | string | Description |
-- **Ethical/legal constraints:** [License, privacy, redistribution notes]
-- **Relevance to research questions:** [How does this dataset help answer your questions?]
+**Key Variables:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `field_name` | string | [Description] |
+| `field_name` | integer | [Description] |
+| `field_name` | float | [Description] |
 
-<!-- Add more dataset sections as needed -->
+**Ethical & Legal Constraints:**
+[Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
+
+**Relevance to Research Questions:**
+[How does this dataset help answer your specific research questions?]
+
+---
+
+### Dataset 2: [Name]
+
+| Attribute | Detail |
+|-----------|--------|
+| **Source** | [URL or citation] |
+| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **Location in repo** | `data/raw/dataset2/` |
+| **Format** | [e.g., CSV, JSON] |
+| **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
+| **Date range / scope** | [e.g., 2020–2023] |
+
+**Description:**
+[What does this dataset contain?]
+
+**Key Variables:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `field_name` | string | [Description] |
+| `field_name` | date | [Description] |
+
+**Ethical & Legal Constraints:**
+[Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
+
+**Relevance to Research Questions:**
+[How does this dataset connect to your research questions?]
+
+<!-- Duplicate the section above for any additional datasets -->
 
 ---
 
 ## Data Quality
-<!-- 500–1000 words -->
+<!-- Target: 500–1,000 words -->
 
-[Summarize the results of your quality assessment. Consider covering:
-- Completeness: Were there missing values? In which fields? How many?
-- Consistency: Were there formatting inconsistencies, duplicate records, or conflicting values?
-- Accuracy: Were there outliers, impossible values, or obvious errors?
-- Timeliness: Is the data current enough for your purposes?
-- Any tools or scripts used to assess quality (reference files in the repo)]
+### Assessment Approach
+[Briefly describe how you assessed quality — what scripts or tools did you use? Reference files in the repo, e.g., [`scripts/profile_data.py`](scripts/profile_data.py).]
+
+### Dataset 1: [Name]
+- **Completeness:** [e.g., "Field X had 4.2% missing values; field Y was fully populated."]
+- **Consistency:** [e.g., "Date formats were inconsistent across rows (MM/DD/YYYY vs YYYY-MM-DD)."]
+- **Accuracy:** [e.g., "Several numeric outliers detected in column Z; values above 999 appeared erroneous."]
+- **Duplicates:** [e.g., "Found 312 duplicate rows based on composite key (id, date)."]
+- **Other issues:** [Any additional concerns.]
+
+### Dataset 2: [Name]
+- **Completeness:** [...]
+- **Consistency:** [...]
+- **Accuracy:** [...]
+- **Duplicates:** [...]
+- **Other issues:** [...]
+
+### Summary
+[Overall takeaway — what was the general state of the data? Were quality issues minor or significant?]
 
 ---
 
 ## Data Cleaning
-<!-- Max 1000 words -->
+<!-- Target: max 1,000 words -->
 
-[Describe the cleaning operations performed. For each operation, explain:
-1. What the issue was
-2. What you did to fix it
-3. Which script or tool performed the operation
+> Scripts: [`scripts/clean_data.py`](scripts/clean_data.py) <!-- update as needed -->
 
-Example structure:]
+### Operation 1: [e.g., Remove duplicate records]
+- **Issue:** [What problem did this address?]
+- **Action:** [What did you do, specifically?]
+- **Script/Tool:** [`scripts/clean_data.py`](scripts/clean_data.py), lines XX–XX
 
-### Operation 1: [e.g., Removing duplicate records]
-- **Issue:** [Description of the problem]
-- **Action:** [What was done]
-- **Script:** [`scripts/clean_data.py`](scripts/clean_data.py)
+### Operation 2: [e.g., Standardize date formats]
+- **Issue:** [...]
+- **Action:** [...]
+- **Script/Tool:** [...]
 
-### Operation 2: [e.g., Standardizing date formats]
-- **Issue:** [Description of the problem]
-- **Action:** [What was done]
-- **Script:** [`scripts/clean_data.py`](scripts/clean_data.py)
+### Operation 3: [e.g., Handle missing values]
+- **Issue:** [...]
+- **Action:** [...]
+- **Script/Tool:** [...]
+
+### Operation 4: [e.g., Normalize column names]
+- **Issue:** [...]
+- **Action:** [...]
+- **Script/Tool:** [...]
 
 <!-- Add more operations as needed -->
+
+### OpenRefine
+[If applicable, describe any operations performed in OpenRefine. The JSON recipe should be saved at `scripts/openrefine_recipe.json`.]
 
 ---
 
 ## Findings
-<!-- ~500 words -->
+<!-- Target: ~500 words -->
 
-[Describe your findings. Include:
-- Key numeric results
-- Trends or patterns observed
-- References to visualizations (embed images or link to them)
+[Describe your results. Be specific — include numbers, percentages, and statistical summaries where applicable. Reference your visualizations below.]
 
-Example:]
+### [Finding 1 Title]
+[Description...]
 
-![Visualization 1](results/figures/figure1.png)
-*Figure 1: [Caption describing the figure]*
+![Figure 1](results/figures/figure1.png)
+*Figure 1: [Caption.]*
 
-[Interpretation of results...]
+### [Finding 2 Title]
+[Description...]
+
+![Figure 2](results/figures/figure2.png)
+*Figure 2: [Caption.]*
+
+<!-- Add more findings/figures as needed -->
 
 ---
 
 ## Future Work
-<!-- ~500–1000 words -->
+<!-- Target: 500–1,000 words -->
 
-[Discuss:
-- Lessons learned during the project
-- What you would do differently
-- How the analysis could be extended
-- Additional datasets or methods that could improve results
-- Limitations of the current approach]
+### Lessons Learned
+[What did you learn about the data, tools, or process that you didn't expect going in?]
+
+### Limitations
+[What are the limitations of your current analysis? What would you caution others about when interpreting results?]
+
+### Potential Extensions
+[What could be done next? New datasets, different methods, broader scope?]
 
 ---
 
 ## Challenges
-<!-- ~500 words -->
+<!-- Target: ~500 words -->
 
-[Discuss the main challenges encountered, such as:
-- Data access or acquisition issues
-- Data quality problems that were difficult to resolve
-- Technical difficulties
-- Limitations in time, compute, or expertise]
+[Discuss the main obstacles you faced. Consider covering:
+- Data access or acquisition difficulties
+- Data quality problems that were hard to resolve
+- Integration challenges across datasets
+- Technical hurdles
+- Time or resource constraints]
 
 ---
 
 ## Reproducing
 
-Follow these steps to reproduce our results from scratch:
+### Requirements
 
-### Prerequisites
-
-- Python 3.x (see `requirements.txt` for dependencies)
-- [Any other tools, e.g., PostgreSQL, OpenRefine]
-
+- Python 3.x
+- Install dependencies:
 ```bash
-pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
+- [Any other tools needed, e.g., PostgreSQL 15, OpenRefine 3.7]
 
 ### Steps
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/[your-repo-url].git
-   cd [repo-name]
+   git clone https://github.com/[org]/[repo].git
+   cd [repo]
 ```
 
 2. **Acquire the data**
 ```bash
    python scripts/acquire_data.py
 ```
-   > If data files exceed 50MB, download them from Box: [Box link]  
-   > Save downloaded files to `data/raw/` before continuing.
+   > ⚠️ **Large files (>50MB):** Download from Box: [INSERT SHAREABLE BOX LINK]  
+   > Save downloaded files to `data/raw/` before proceeding.
 
-3. **Run data cleaning**
+3. **Profile data quality** *(optional but recommended)*
+```bash
+   python scripts/profile_data.py
+```
+
+4. **Clean the data**
 ```bash
    python scripts/clean_data.py
 ```
 
-4. **Run analysis / generate visualizations**
+5. **Integrate datasets**
+```bash
+   python scripts/integrate_data.py
+```
+
+6. **Run analysis and generate visualizations**
 ```bash
    python scripts/analyze.py
 ```
 
-Results will be saved to `results/`.
+7. **Run full pipeline** *(optional, requires Snakemake)*
+```bash
+   snakemake --cores 1
+```
+
+Output files and figures will be saved to `results/`.
 
 ---
 
 ## References
 
-<!-- Use a consistent citation format, e.g., APA or Chicago -->
+<!-- Use a consistent format (APA, Chicago, etc.) -->
 
-1. [Author(s). (Year). *Title*. Publisher/Journal. URL]
-2. [Dataset citation]
-3. [Software citation, e.g., pandas, scikit-learn]
+1. [Author(s). (Year). *Dataset/Paper title*. Publisher. https://doi.org/...]
+2. [Author(s). (Year). *Dataset/Paper title*. Publisher. https://doi.org/...]
+3. [Software: e.g., McKinney, W. (2010). pandas. https://pandas.pydata.org]
