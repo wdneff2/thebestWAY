@@ -1,0 +1,38 @@
+# Reproducibility
+
+This project is fully reproducible using the provided datasets and code. The workflow consists of two main stages: data cleaning (OpenRefine) and data integration (Python).
+
+---
+
+## Data Cleaning (OpenRefine)
+
+Data cleaning was performed in OpenRefine to prepare the datasets for integration. The following steps were applied:
+
+- Filtered data to include only EU countries
+- Removed aggregate and non-country entries (e.g., "World", "European Union", income groups)
+- Standardized country names to ensure consistency across datasets (e.g., resolving naming differences such as "Slovak Republic" vs. "Slovakia")
+- Reshaped datasets from wide to long format (converting year columns into a single `year` column)
+- Removed unnecessary columns and retained only relevant variables (country, year, and indicator values)
+- Ensured consistent data types and formatting across all datasets
+
+Cleaned datasets were exported as CSV files for further processing.
+
+---
+
+## Data Integration (Python)
+
+Data integration was performed using Python and the pandas library.
+
+Steps:
+1. Loaded cleaned datasets into Python
+2. Merged datasets using shared identifiers: `country` and `year`
+3. Applied an inner join to retain only overlapping observations across all datasets
+4. Verified that the final dataset contained no missing values
+
+The final dataset includes:
+- GDP per capita
+- Health expenditure
+- Health spending
+- Doctors per capita
+
+The merged dataset was saved as:
