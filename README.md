@@ -168,11 +168,6 @@ pip install -r requirements.txt
    python scripts/analyze.py
 ```
 
-5. **[Optional] Run full pipeline via Snakemake**
-```bash
-   snakemake --cores 1
-```
-
 Results will be saved to `results/`.
 
 ---
