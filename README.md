@@ -3,9 +3,9 @@
 # [Project Title]
 
 ## Contributors
-- Autumn Rosedale
-- William Neff
-- Yuri You
+- Autumn Rosedale (Data Cleaning Section and Reproducability)
+- William Neff (Summary, Data Profile, Data Quality)
+- Yuri You (Finding, Future Work, Challenges)
 
 ---
 
