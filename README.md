@@ -5,7 +5,7 @@
 ## Contributors
 - Autumn Rosedale (Data Cleaning Section and Reproducability)
 - William Neff (Summary, Data Profile, Data Quality)
-- Yuri You (Finding, Future Work, Challenges)
+- Yuri You (Data Analysis, Data Visualizations, Findings, Future Work, Challenges)
 
 ---
 
@@ -147,23 +147,53 @@
 ---
 
 ## Findings
-<!-- Target: ~500 words -->
 
-[Describe your results. Be specific — include numbers, percentages, and statistical summaries where applicable. Reference your visualizations below.]
+> Analysis and visualizations were generated using:
+> [`scripts/analyze.py`](scripts/analyze.py)
 
-### [Finding 1 Title]
-[Description...]
+This section presents the key relationships identified between socioeconomic indicators and healthcare access across EU countries. The analysis focuses on GDP per capita, health spending, and doctors per capita, using both visualizations and correlation metrics to support each finding.
+
+---
+
+### **Finding 1: Wealth Is Strongly Associated with Healthcare Access**
+A strong positive relationship exists between GDP per capita and doctors per capita, with a correlation coefficient of approximately **0.78**. This indicates that wealthier countries tend to have greater access to healthcare resources, as measured by physician availability. The scatter plot shows a clear upward trend, where countries with higher GDP levels consistently exhibit higher numbers of doctors per capita.
+
+This finding suggests that overall economic capacity plays a significant role in shaping healthcare access, likely due to increased funding availability, infrastructure, and institutional development in wealthier nations.
 
 ![Figure 1](results/figures/figure1.png)
-*Figure 1: [Caption.]*
+*Figure 1: Relationship between GDP per capita and doctors per capita.*
 
-### [Finding 2 Title]
-[Description...]
+### **Finding 2: Health Spending Does Not Guarantee Healthcare Access**
+Health spending as a percentage of GDP shows only a **moderate correlation (0.46)** with doctors per capita. While some countries with higher health spending tend to have more doctors, the relationship is much more dispersed compared to GDP. Countries with similar levels of health spending often display significant differences in physician availability.
+
+This suggests that simply allocating a higher proportion of GDP to healthcare does not consistently translate into improved access. Instead, how resources are distributed and managed within healthcare systems appears to play a more significant role than overall spending levels alone.
 
 ![Figure 2](results/figures/figure2.png)
-*Figure 2: [Caption.]*
+*Figure 2: Relationship between health spending and doctors per capita.*
 
-<!-- Add more findings/figures as needed -->
+### **Finding 3: Wealth Does Not Drive Healthcare Investment Decisions**
+There is virtually **no correlation (0.02)** between GDP per capita and health spending as a percentage of GDP. The scatter plot shows no clear pattern, with both low- and high-income countries exhibiting a wide range of health spending levels.
+
+This indicates that wealthier countries do not necessarily allocate a larger share of their economic resources to healthcare. Instead, healthcare investment appears to reflect national policy priorities, institutional structures, and strategic decisions rather than overall economic wealth alone.
+
+![Figure 3](results/figures/figure3.png)
+*Figure 3: Relationship between GDP per capita and health spending.*
+
+### **Finding 4: High-Income Countries Achieve Strong Healthcare Access Despite Lower Relative Spending**
+
+Country-level analysis further reinforces these findings. For example, Luxembourg, the wealthiest country in the dataset with GDP per capita exceeding $130,000, allocates only about **5.6–5.8%** of its GDP to healthcare while maintaining one of the highest levels of doctors per capita (approximately 18 physicians per capita). Similarly, Ireland exhibits high GDP levels with relatively moderate healthcare spending but still achieves strong physician availability.
+
+These examples demonstrate that high-income countries can maintain strong healthcare access without proportionally high spending, suggesting potential efficiencies or structural advantages within their healthcare systems.
+
+### **Supporting Evidence: Correlation Matrix**
+
+A correlation matrix of all variables confirms these patterns. GDP per capita shows a strong positive correlation with doctors per capita (0.78), while health spending has a weaker relationship (0.46). Additionally, the near-zero correlation between GDP and health spending (0.02) reinforces the conclusion that economic wealth does not directly determine healthcare investment levels.
+
+It is also important to note that health expenditure and health spending are perfectly correlated (1.00), indicating that they represent the same underlying measure and were treated as equivalent variables in the analysis.
+
+![Figure 4](results/figures/figure4.png)
+*Figure 4: Correlation matrix of key socioeconomic and healthcare indicators.*
+
 
 ---
 
