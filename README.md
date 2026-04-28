@@ -160,7 +160,7 @@ A strong positive relationship exists between GDP per capita and doctors per cap
 
 This finding suggests that overall economic capacity plays a significant role in shaping healthcare access, likely due to increased funding availability, infrastructure, and institutional development in wealthier nations.
 
-![Figure 1](results/figures/figure1.png)
+![Figure 1](Analysis/figure1.png)
 *Figure 1: Relationship between GDP per capita and doctors per capita.*
 
 ### **Finding 2: Health Spending Does Not Guarantee Healthcare Access**
@@ -168,7 +168,7 @@ Health spending as a percentage of GDP shows only a **moderate correlation (0.46
 
 This suggests that simply allocating a higher proportion of GDP to healthcare does not consistently translate into improved access. Instead, how resources are distributed and managed within healthcare systems appears to play a more significant role than overall spending levels alone.
 
-![Figure 2](results/figures/figure2.png)
+![Figure 2](Analysis/figure2.png)
 *Figure 2: Relationship between health spending and doctors per capita.*
 
 ### **Finding 3: Wealth Does Not Drive Healthcare Investment Decisions**
@@ -176,7 +176,7 @@ There is virtually **no correlation (0.02)** between GDP per capita and health s
 
 This indicates that wealthier countries do not necessarily allocate a larger share of their economic resources to healthcare. Instead, healthcare investment appears to reflect national policy priorities, institutional structures, and strategic decisions rather than overall economic wealth alone.
 
-![Figure 3](results/figures/figure3.png)
+![Figure 3](Analysis/figure3.png)
 *Figure 3: Relationship between GDP per capita and health spending.*
 
 ### **Finding 4: High-Income Countries Achieve Strong Healthcare Access Despite Lower Relative Spending**
@@ -191,7 +191,7 @@ A correlation matrix of all variables confirms these patterns. GDP per capita sh
 
 It is also important to note that health expenditure and health spending are perfectly correlated (1.00), indicating that they represent the same underlying measure and were treated as equivalent variables in the analysis.
 
-![Figure 4](results/figures/figure4.png)
+![Figure 4](Analysis/figure4.png)
 *Figure 4: Correlation matrix of key socioeconomic and healthcare indicators.*
 
 ---
