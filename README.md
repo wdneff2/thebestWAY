@@ -304,7 +304,23 @@ df.to_csv("merged_dataset.csv", index=False)
 
 df.head()
 
-The shared key we used to merge the datasets was "country" + "year". 
+The shared key we used to merge the datasets was "country" + "year". We did inner joins to only keep overlapping observations. You can find the final merged output in: data/merged/merged_dataset.csv
+
+### Validation
+To validate your dataset, there are a couple of sanity checks that should be performed to make sure you have correctly filtered your data. We used:
+
+df.shape
+df.isnull().sum()
+df["country"].nunique()
+df["year"].nunique()
+
+The results from above should be as follows:
+   1. 98 rows
+   2. 6 variables
+   3. 25 countries
+   4. 4 years
+   5. 0 missing values
+
 
 ## References
 
