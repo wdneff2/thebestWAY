@@ -252,58 +252,26 @@ Finally, managing files across local environments and GitHub introduced addition
 
 ## Reproducing
 
-### Requirements
+For this project, we used integrated data from the World Bank World Development Indicators (WDI) and OECD Data Portal. We filtered this data to only EU countries. The final merged dataset includes:
+1. 25 EU Countries
+2. 4 overlapping years (we had originally planned 10, but there was limited overlap across all datasets)
+3. Variables included:
+   1. GDP per capita
+   2. Government health expenditure
+   3. Health spending
+   4. Doctors per capita
+4. We removed all missing values. We first cleaned each dataset separately before merging.
 
-- Python 3.x
-- Install dependencies:
-```bash
-  pip install -r requirements.txt
-```
-- [Any other tools needed, e.g., PostgreSQL 15, OpenRefine 3.7]
+Our repository is structured as follows:
+data/ ├── raw/ │ ├── gdp_per_capita.csv │ ├── health_expenditure.csv │ ├── health_spending.csv │ └── doctors_per_capita.csv 
 
-### Steps
+clean/ ├── merged_dataset.csv 
 
-1. **Clone the repository**
-```bash
-   git clone https://github.com/[org]/[repo].git
-   cd [repo]
-```
+reproducibility/ ├── merge.ipynb ├── scatter_plot.png ├── requirements.txt └── pip-freeze.txt
 
-2. **Acquire the data**
-```bash
-   python scripts/acquire_data.py
-```
-   > ⚠️ **Large files (>50MB):** Download from Box: [INSERT SHAREABLE BOX LINK]  
-   > Save downloaded files to `data/raw/` before proceeding.
+Reproducing our results:
 
-3. **Profile data quality** *(optional but recommended)*
-```bash
-   python scripts/profile_data.py
-```
-
-4. **Clean the data**
-```bash
-   python scripts/clean_data.py
-```
-
-5. **Integrate datasets**
-```bash
-   python scripts/integrate_data.py
-```
-
-6. **Run analysis and generate visualizations**
-```bash
-   python scripts/analyze.py
-```
-
-7. **Run full pipeline** *(optional, requires Snakemake)*
-```bash
-   snakemake --cores 1
-```
-
-Output files and figures will be saved to `results/`.
-
----
+1. Step 1: 
 
 ## References
 
