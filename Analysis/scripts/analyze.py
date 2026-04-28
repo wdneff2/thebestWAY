@@ -45,7 +45,7 @@ plt.xlabel("GDP per Capita")
 plt.ylabel("Health Spending (% of GDP)")
 plt.title("Wealth vs Health Investment")
 
-df[["gdp_per_capita", "health_spending"]].corr()
+print(df[["gdp_per_capita", "health_spending"]].corr())
 
 plt.savefig("results/figures/figure3.png", bbox_inches="tight")
 plt.show()
