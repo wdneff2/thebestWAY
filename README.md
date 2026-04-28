@@ -220,6 +220,8 @@ Additionally, while the dataset was cleaned and integrated to ensure completenes
 
 Finally, the analysis is based on correlation, which does not establish causation. This reflects a fundamental limitation of observational data (Module 4) and highlights the need for more advanced analytical methods to fully understand underlying relationships.
 
+---
+
 ### Potential Extensions
 
 Future work could expand this project in several meaningful ways. One potential extension is to incorporate additional variables, such as life expectancy, infant mortality rates, or education levels, to provide a more comprehensive analysis of public health outcomes. Including these variables would allow for stronger connections between socioeconomic factors and actual health results.
