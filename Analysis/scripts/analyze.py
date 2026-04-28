@@ -21,10 +21,10 @@ plt.scatter(df["gdp_per_capita"], df["doctors_per_capita"])
 plt.xlabel("GDP per Capita")
 plt.ylabel("Doctors per Capita")
 plt.title("Wealth vs Healthcare Access")
-plt.show()
 
 plt.savefig("results/figures/figure1.png", bbox_inches="tight")
 plt.show()
+plt.clf()
 
 
 z = np.polyfit(df["health_spending"], df["doctors_per_capita"], 1)
@@ -35,21 +35,21 @@ plt.plot(df["health_spending"], p(df["health_spending"]))
 plt.xlabel("Health Spending (% of GDP)")
 plt.ylabel("Doctors per Capita")
 plt.title("Health Investment vs Healthcare Access")
-plt.show()
 
 plt.savefig("results/figures/figure2.png", bbox_inches="tight")
 plt.show()
+plt.clf()
 
 plt.scatter(df["gdp_per_capita"], df["health_spending"])
 plt.xlabel("GDP per Capita")
 plt.ylabel("Health Spending (% of GDP)")
 plt.title("Wealth vs Health Investment")
-plt.show()
 
 df[["gdp_per_capita", "health_spending"]].corr()
 
 plt.savefig("results/figures/figure3.png", bbox_inches="tight")
 plt.show()
+plt.clf()
 
 
 df.sort_values(by="doctors_per_capita", ascending=False).head()
@@ -64,3 +64,4 @@ plt.title("Correlation Matrix of Socioeconomic and Health Indicators")
 
 plt.savefig("results/figures/figure4.png", bbox_inches="tight")
 plt.show()
+plt.clf()
