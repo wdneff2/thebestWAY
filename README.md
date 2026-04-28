@@ -255,23 +255,33 @@ Finally, managing files across local environments and GitHub introduced addition
 For this project, we used integrated data from the World Bank World Development Indicators (WDI) and OECD Data Portal. We filtered this data to only EU countries. The final merged dataset includes:
 1. 25 EU Countries
 2. 4 overlapping years (we had originally planned 10, but there was limited overlap across all datasets)
-3. Variables included:
+3. 98 observations
+4. 0 missing values after integration
+5. Variables included:
    1. GDP per capita
    2. Government health expenditure
    3. Health spending
    4. Doctors per capita
-4. We removed all missing values. We first cleaned each dataset separately before merging.
 
 Our repository is structured as follows:
-data/ ├── raw/ │ ├── gdp_per_capita.csv │ ├── health_expenditure.csv │ ├── health_spending.csv │ └── doctors_per_capita.csv 
+project/ ├── Analysis/ │ ├── Data Analysis.ipynb │ ├── data/ │ ├── raw/ │ │ ├── gdp_per_capita_raw.csv │ │ ├── health_expenditure_raw.csv │ │ ├── health_spending_raw.csv │ │ └── doctors_per_capita_raw.csv │ │ │ ├── clean/ │ │ ├── gdp_per_capita.csv │ │ ├── health_expenditure.csv │ │ ├── health_spending.csv │ │ ├── doctors_per_capita.csv │ │ └── README.md │ │ │ ├── merged/ │ │ ├── merged_dataset.csv │ │ └── README.md │ └── README.md
 
-clean/ ├── merged_dataset.csv 
+The datasets used were from the World Bank World Development Indicators and the OECD Data Portal. From the World Bank World Development Indicators, we used:
+1. GDP per capita
+2. Government health expenditure
+From OECD Data Portal:
+1. Health spending
+2. Doctors per capita
+You can access these raw source files in: data/raw/
 
-reproducibility/ ├── merge.ipynb ├── scatter_plot.png ├── requirements.txt └── pip-freeze.txt
+For data cleaning, we used OpenRefine. The clean files we exported from OpenRevine and can be accesed in: data/clean/
 
-Reproducing our results:
-
-1. Step 1: 
+The cleaning steps are as follows:
+1. Filtered all raw data sources so that the data only consisted of EU countries. We renamed all columns with country data to the "country" column. There should be 25 countries total.
+   Final country list:
+      Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Netherlands, Poland, Portugal, Romania, Slovak Republic, Slovenia, Spain, Sweden.
+2. Went through and checked every country name and made sure the spelling was consistent across all the datasets. A naming consistency we had to change was renaming the datasets from "Slovak Republic" to "Slovakia" before merging.
+3. We removed all variables we weren't interested in using for analysis. The datasets had columns that contained information we didn't need to use for this project. The remaining variables were "country", "year", and indicator values.
 
 ## References
 
