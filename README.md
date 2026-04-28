@@ -274,7 +274,8 @@ From OECD Data Portal:
 2. Doctors per capita
 You can access these raw source files in: data/raw/
 
-For data cleaning, we used OpenRefine. The clean files we exported from OpenRevine and can be accesed in: data/clean/
+### Data Cleaning
+For data cleaning, we used OpenRefine. Full OpenRefine cleaning operations are included in data/clean/openrefine_operations.json. This allows the cleaning workflow (filtering EU countries, standardizing country names, removing inconsistent records, and formatting variables) to be replayed exactly in OpenRefine. The clean files we exported from OpenRefine can be accessed in: data/clean/
 
 The cleaning steps are as follows:
 1. Filtered all raw data sources so that the data only consisted of EU countries. We renamed all columns with country data to the "country" column. There should be 25 countries total.
@@ -282,6 +283,28 @@ The cleaning steps are as follows:
       Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Netherlands, Poland, Portugal, Romania, Slovak Republic, Slovenia, Spain, Sweden.
 2. Went through and checked every country name and made sure the spelling was consistent across all the datasets. A naming consistency we had to change was renaming the datasets from "Slovak Republic" to "Slovakia" before merging.
 3. We removed all variables we weren't interested in using for analysis. The datasets had columns that contained information we didn't need to use for this project. The remaining variables were "country", "year", and indicator values.
+4. Finally, we made sure all datasets had the same format. We checked for duplicates and verified that all numbers were recorded in the correct format. All four datasets overlapped for only 4 years; the final analysis used 4 years rather than the originally planned 10 years.
+
+### Data Inegration
+For merging our datasets, we used Python, and our integration can be performed in: Analysis/Data Analysis.ipynb.
+
+Merge:
+import pandas as pd
+
+gdp = pd.read_csv("gdp_per_capita.csv")
+health_exp = pd.read_csv("health_expenditure.csv")
+health_spend = pd.read_csv("health_spending.csv")
+doctors = pd.read_csv("doctors_per_capita.csv")
+
+df = gdp.merge(health_exp, on=["country", "year"], how="inner")
+df = df.merge(health_spend, on=["country", "year"], how="inner")
+df = df.merge(doctors, on=["country", "year"], how="inner")
+
+df.to_csv("merged_dataset.csv", index=False)
+
+df.head()
+
+The shared key we used to merge the datasets was "country" + "year". 
 
 ## References
 
