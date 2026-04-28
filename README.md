@@ -149,9 +149,9 @@
 ## Findings
 
 > Analysis and visualizations were generated using:
-> [`scripts/analyze.py`](scripts/analyze.py)
+> [`scripts/analyze.py`](scripts/analyze.py
 
-This section presents the key relationships identified between socioeconomic indicators and healthcare access across EU countries. The analysis focuses on GDP per capita, health spending, and doctors per capita, using both visualizations and correlation metrics to support each finding.
+This analysis reflects key stages of the data lifecycle, including data integration, cleaning, and exploratory analysis (Module 2, Module 7, Module 10). By combining secondary data sources from the World Bank and OECD (Module 4), we created a unified dataset to examine relationships between socioeconomic indicators and healthcare access across EU countries. The analysis focuses on GDP per capita, health spending, and doctors per capita, using both visualizations and correlation metrics to support each finding.
 
 ---
 
@@ -194,32 +194,53 @@ It is also important to note that health expenditure and health spending are per
 ![Figure 4](results/figures/figure4.png)
 *Figure 4: Correlation matrix of key socioeconomic and healthcare indicators.*
 
-
 ---
 
 ## Future Work
-<!-- Target: 500–1,000 words -->
 
 ### Lessons Learned
-[What did you learn about the data, tools, or process that you didn't expect going in?]
+
+Throughout this project, we gained a deeper understanding of the complexities involved in working with real-world datasets. While publicly available data from sources such as the World Bank and OECD appear clean at a high level, integrating them revealed challenges related to consistency, completeness, and variable alignment (Module 10, Module 7). We also developed our analytical and problem solving skills when defining our integration scope amd methods. This emphasized that data must be actively managed and refined throughout the data lifecycle rather than assumed to be immediately usable (Module 2).
+
+Additionally, we developed practical experience organizing our workflow into a reproducible pipeline. Using OpenRefine for data integration, as well as using Python for exploratory analysis highlighted the importance of computational reproducibility and transparency (Module 1, Module 14). Ensuring that results could be consistently regenerated using the same data and code reinforced key principles of data curation and documentation.
+
+---
 
 ### Limitations
-[What are the limitations of your current analysis? What would you caution others about when interpreting results?]
+
+This project highlights several limitations related to data quality and integration. First, the dataset is limited to only four years of data due to the overlap between the World Bank and OECD sources. This reflects a timeliness constraint (Module 10), as the integration process required restricting the dataset to a common time window, limiting the ability to analyze long-term trends.
+
+Second, the analysis relies on secondary observational data (Module 4), meaning that we were not involved in the data collection process. As discussed in lecture, this introduces uncertainty regarding how the data was collected, potential biases, and limitations in accuracy.
+
+Additionally, while the dataset was cleaned and integrated to ensure completeness and consistency (Module 10, Module 7), it does not include key health outcome variables such as life expectancy or infant mortality. This limits the ability to directly evaluate public health outcomes and instead focuses on healthcare access.
+
+Finally, the analysis is based on correlation, which does not establish causation. This reflects a fundamental limitation of observational data (Module 4) and highlights the need for more advanced analytical methods to fully understand underlying relationships.
 
 ### Potential Extensions
-[What could be done next? New datasets, different methods, broader scope?]
+
+Future work could expand this project in several meaningful ways. One potential extension is to incorporate additional variables, such as life expectancy, infant mortality rates, or education levels, to provide a more comprehensive analysis of public health outcomes. Including these variables would allow for stronger connections between socioeconomic factors and actual health results.
+
+Another extension would be to apply more advanced statistical methods, such as regression analysis, to better understand relationships between variables while controlling for confounding factors. This would move beyond simple correlation and provide deeper analytical insight into the data.
+
+Additionally, expanding the dataset beyond the European Union to include a broader set of countries and a longer timeline would address current limitations related to timeliness and scope (Module 10). This would allow for deeper trend analysis and allow us to generalize our findings better.
+
+Finally, further investigation into outlier countries, such as Luxembourg and Ireland, could provide valuable insights into how certain nations achieve strong healthcare access despite relatively lower proportional spending. This type of deeper analysis reflects the importance of interpreting patterns within observational data rather than relying solely on aggregate trends (Module 4).
 
 ---
 
 ## Challenges
-<!-- Target: ~500 words -->
 
-[Discuss the main obstacles you faced. Consider covering:
-- Data access or acquisition difficulties
-- Data quality problems that were hard to resolve
-- Integration challenges across datasets
-- Technical hurdles
-- Time or resource constraints]
+Throughout this project, we encountered several challenges that directly relate to key concepts in data curation and the data lifecycle (Module 1, Module 2).
+
+One of the primary challenges was addressing data heterogeneity during integration (Module 7). The World Bank and OECD datasets differed in structure, formatting, and variable naming conventions, requiring schema alignment and transformation into a common model. This process reflects challenges related to schema mapping and semantic ambiguity (Module 7), where similar concepts are represented differently across datasets.
+
+Another challenge involved ensuring data quality across multiple dimensions (Module 10). We addressed issues related to completeness (missing values), consistency (standardizing country names and formats), and accuracy (validating merged records). This required multiple steps of data cleaning, including discovery, error detection, and repair, consistent with standard data cleaning workflows (Module 10).
+
+The restriction to overlapping years also introduced a timeliness constraint (Module 10), requiring us to limit the dataset to four years. While this ensured consistency across sources, it reduced the temporal depth of the analysis.
+
+We also encountered challenges related to reproducibility and transparency (Module 1, Module 14). Transitioning from exploratory work in a notebook environment to a structured Python script required organizing code into a reproducible pipeline. This aligns with the concept of computational reproducibility, which requires that results can be consistently reproduced using the same data, code, and environment (Module 1).
+
+Finally, managing files across local environments and GitHub introduced challenges in workflow organization. Ensuring that scripts, datasets, and generated outputs were correctly structured and accessible required careful coordination, reinforcing the importance of data curation and proper documentation throughout the data lifecycle (Module 1, Module 2).
 
 ---
 
