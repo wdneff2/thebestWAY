@@ -63,12 +63,13 @@
 
 | Attribute | Detail |
 |-----------|--------|
-| **Source** | [URL or citation] |
-| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **ID** | NY.GDP.PCAP.CD |
+| **Source** | Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development ( OECD ); Staff estimates, World Bank ( WB ) |
+| **License** | CC BY-4.0 |
 | **Location in repo** | `data/raw/gdp_per_capita.csv/` |
-| **Format** | [e.g., CSV, JSON] |
+| **Format** | CSV |
 | **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
-| **Date range / scope** | [e.g., 2020–2023] |
+| **Raw Reference Period** | 1960-2024 |
 
 **Description:**
 [What does this dataset contain?]
