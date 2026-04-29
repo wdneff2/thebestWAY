@@ -213,7 +213,7 @@ This dataset is directly relevant to the first research question, as it provides
 ## Findings
 
 > Analysis and visualizations were generated using:
-> [`Analysis/scripts/analyze.py`](Analysis/Data_Analysis.ipynb)
+> [`Analysis/Data_Analysis.ipynb`](Analysis/Data_Analysis.ipynb)
 
 This analysis reflects key stages of the data lifecycle, including data integration, cleaning, and exploratory analysis (Module 2, Module 7, Module 10). By combining secondary data sources from the World Bank and OECD (Module 4), we created a unified dataset to examine relationships between socioeconomic indicators and healthcare access across EU countries. The analysis focuses on GDP per capita, health spending, and doctors per capita, using both visualizations and correlation metrics to support each finding.
 
