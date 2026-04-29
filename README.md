@@ -38,7 +38,7 @@
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
 | **Format** | [e.g., CSV, JSON, Parquet] |
-| **Size** | [e.g., 45,000 rows × 14 columns, ~12MB] |
+| **Size** | 159 rows x 40 columns |
 | **Date range / scope** | [e.g., 2018–2023, United States only] |
 
 **Description:**
@@ -68,8 +68,8 @@
 | **License** | CC BY-4.0 |
 | **Location in repo** | `data/raw/gdp_per_capita.csv/` |
 | **Format** | CSV |
-| **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
-| **Raw Reference Period** | 1960-2024 |
+| **Size** | 270 rows x 70 columns > 304 KB |
+| **Raw Reference Period** | 1960-2025 |
 
 **Description:**
 [What does this dataset contain?]
@@ -94,7 +94,7 @@
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/health_expenditure_raw.csv/` |
 | **Format** | [e.g., CSV, JSON, Parquet] |
-| **Size** | [e.g., 45,000 rows × 14 columns, ~12MB] |
+| **Size** | 270 rows x 70 columns |
 | **Date range / scope** | [e.g., 2018–2023, United States only] |
 
 **Description:**
@@ -123,7 +123,7 @@
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/health_spending_raw.csv/` |
 | **Format** | [e.g., CSV, JSON] |
-| **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
+| **Size** | 499 rows x 46 columns |
 | **Date range / scope** | [e.g., 2020–2023] |
 
 **Description:**
