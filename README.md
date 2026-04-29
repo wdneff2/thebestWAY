@@ -30,13 +30,13 @@
 ## Data Profile
 <!-- Target: max 2,000 words total across all datasets -->
 
-### Dataset 1: [Name]
+### Dataset 1: Doctors per Capita
 
 | Attribute | Detail |
 |-----------|--------|
 | **Source** | [URL or citation] |
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
-| **Location in repo** | `data/raw/dataset1/` |
+| **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
 | **Format** | [e.g., CSV, JSON, Parquet] |
 | **Size** | [e.g., 45,000 rows × 14 columns, ~12MB] |
 | **Date range / scope** | [e.g., 2018–2023, United States only] |
@@ -59,13 +59,13 @@
 
 ---
 
-### Dataset 2: [Name]
+### Dataset 2: GDP per Capita
 
 | Attribute | Detail |
 |-----------|--------|
 | **Source** | [URL or citation] |
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
-| **Location in repo** | `data/raw/dataset2/` |
+| **Location in repo** | `data/raw/gdp_per_capita.csv/` |
 | **Format** | [e.g., CSV, JSON] |
 | **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
 | **Date range / scope** | [e.g., 2020–2023] |
@@ -85,7 +85,60 @@
 **Relevance to Research Questions:**
 [How does this dataset connect to your research questions?]
 
-<!-- Duplicate the section above for any additional datasets -->
+### Dataset 3: Health Expenditure
+
+| Attribute | Detail |
+|-----------|--------|
+| **Source** | [URL or citation] |
+| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **Location in repo** | `data/raw/health_expenditure_raw.csv/` |
+| **Format** | [e.g., CSV, JSON, Parquet] |
+| **Size** | [e.g., 45,000 rows × 14 columns, ~12MB] |
+| **Date range / scope** | [e.g., 2018–2023, United States only] |
+
+**Description:**
+[What does this dataset contain? Where does it come from? Who collected it and for what purpose?]
+
+**Key Variables:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `field_name` | string | [Description] |
+| `field_name` | integer | [Description] |
+| `field_name` | float | [Description] |
+
+**Ethical & Legal Constraints:**
+[Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
+
+**Relevance to Research Questions:**
+[How does this dataset help answer your specific research questions?]
+
+---
+
+### Dataset 4: Health Spending
+
+| Attribute | Detail |
+|-----------|--------|
+| **Source** | [URL or citation] |
+| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **Location in repo** | `data/raw/health_spending_raw.csv/` |
+| **Format** | [e.g., CSV, JSON] |
+| **Size** | [e.g., 8,000 rows × 9 columns, ~3MB] |
+| **Date range / scope** | [e.g., 2020–2023] |
+
+**Description:**
+[What does this dataset contain?]
+
+**Key Variables:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `field_name` | string | [Description] |
+| `field_name` | date | [Description] |
+
+**Ethical & Legal Constraints:**
+[Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
+
+**Relevance to Research Questions:**
+[How does this dataset connect to your research questions?]
 
 ---
 
