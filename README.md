@@ -72,46 +72,50 @@
 | **Raw Reference Period** | 1960-2025 |
 
 **Description:**
-[What does this dataset contain?]
+This dataset contains annual estimates of GDP per capita in current US dollars, measuring the total economic output of a country divided by its population without adjusting for inflation. It covers the period from 1960 to 2024, with data sourced from official national statistics, the OECD, and World Bank staff estimates.
 
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `field_name` | string | [Description] |
-| `field_name` | date | [Description] |
+| `Country Name` | string | Name of country |
+| `Country Code` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
+| `19xx or 20xx` | int | The associated GDP per capita (meaning dividing the GDP by its population) for the respecitive coutnry during the year as presented for standarization  |
 
 **Ethical & Legal Constraints:**
-[Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
+The dataset is licensed under CC BY-4.0, which allows sharing and adaptation as long as appropriate credit is given to the original sources (country official statistics, OECD, World Bank). There are no privacy concerns since the data consists of aggregated national economic indicators, not individual or household-level information. However, it should should be noted of potential bias due to differences in national statistical methodologies, gaps in data coverage across countries and years, and the fact that current-price estimates do not account for inflation or purchasing power parity, which can distort cross-country comparisons. Redistribution is permitted under the license terms, but the original source and license must be attributed.
 
 **Relevance to Research Questions:**
-[How does this dataset connect to your research questions?]
+This dataset is directly relevant to the first research question, as it provides the key socioeconomic indicator of GDP per capita (current US$) , which the project aims to correlate with public health outcomes like life expectancy and infant mortality across European countries. By merging this data with health metrics from the OECD datasets used and government health expenditure indicators, the team can statistically assess whether wealthier European nations tend to have better population health outcomes.
+
+---
 
 ### Dataset 3: Health Expenditure
 
 | Attribute | Detail |
 |-----------|--------|
-| **Source** | [URL or citation] |
-| **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
+| **ID** | SH.XPD.CHEX.GD.ZS |
+| **Source** | Global Health Expenditure Database, updated December 12th, 2025, World Health Organization ( WHO ), uri: apps.who.int/nha/database |
+| **License** | CC BY-4.0 |
 | **Location in repo** | `data/raw/health_expenditure_raw.csv/` |
-| **Format** | [e.g., CSV, JSON, Parquet] |
-| **Size** | 270 rows x 70 columns |
-| **Date range / scope** | [e.g., 2018–2023, United States only] |
+| **Format** | CSV |
+| **Size** | 270 rows x 70 columns > 139 KB |
+| **Raw Reference Period** | 2000-2025 (though the recording starts at 1960, no data is received until 2000) |
 
 **Description:**
-[What does this dataset contain? Where does it come from? Who collected it and for what purpose?]
+This dataset contains annual estimates of current health expenditure expressed as a percentage of GDP for countries worldwide, covering the period 2000–2024. It includes spending on healthcare goods and services consumed each year (e.g., hospital care, medications, preventive medicine) but excludes capital investments such as buildings, machinery, or IT infrastructure. The data comes from the World Health Organization (WHO) Global Health Expenditure Database, compiled under the System of Health Accounts 2011 (SHA 2011) framework. The WHO collects these data primarily to support evidence-based health policy-making, track progress toward Universal Health Coverage (UHC) , and monitor Sustainable Development Goal (SDG) target 3.c (strengthening health financing).
 
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `field_name` | string | [Description] |
-| `field_name` | integer | [Description] |
-| `field_name` | float | [Description] |
+| `Country Name` | string | Name of country |
+| `Country Code` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
+| `19xx or 20xx` | int | The respective health expenditure as a percentage of their GDP (meaning that the higher percentage, the more poriton of GDP the country spends on their country's health) for the given year |
 
 **Ethical & Legal Constraints:**
-[Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
+The dataset is licensed under CC BY-4.0, permitting sharing and adaptation with proper attribution to the WHO and the Global Health Expenditure Database. There are no privacy concerns, as the data reflect aggregated national-level spending, not individual or household information. However, potential bias should be considered: estimates rely on national reporting, which may vary in accuracy, completeness, and methodological consistency across countries. Additionally, the indicator excludes capital expenditures, meaning it may underrepresent total health investment in countries building new infrastructure, and it does not capture out-of-pocket spending burdens directly. Redistribution is allowed under the license terms, but credit must be given to the original source.
 
 **Relevance to Research Questions:**
-[How does this dataset help answer your specific research questions?]
+This dataset is directly relevant to the first research question, as it provides the second key socioeconomic factor—government/current health expenditure as a percentage of GDP—that the project aims to correlate with public health outcomes like life expectancy and infant mortality across European countries. By merging this dataset with the GDP per capita data and OECD health metrics, the project can statistically assess whether European nations that allocate a larger share of their economy to current health spending tend to have better health outcomes, independent of overall wealth. For the second research question (regional disparities), this dataset helps identify whether countries with similar GDP per capita but different health spending levels (e.g., Eastern vs. Western Europe) exhibit divergent health outcomes, revealing potential policy or systemic differences.
 
 ---
 
