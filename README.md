@@ -251,6 +251,24 @@ Finally, managing files across local environments and GitHub introduced addition
 ---
 
 ## Reproducing
+### Files
+Here are the files needed for the following:
+#### Data Sources
+- [World Bank World Development Indicators](https://databank.worldbank.org/source/world-development-indicators)
+- [OECD Data Portal](https://data.oecd.org/)
+
+#### Reproducibility Files
+
+Full OpenRefine operation histories are included for each cleaned dataset:
+
+- [GDP Cleaning Operations](data/clean/gdp_openrefine_operations.json)
+- [Health Expenditure Cleaning Operations](data/clean/health_expenditure_openrefine_operations.json)
+- [Health Spending Cleaning Operations](data/clean/health_spending_openrefine_operations.json)
+- [Doctors per Capita Cleaning Operations](data/clean/doctors_openrefine_operations.json)
+
+- [Analysis Notebook](Analysis/Data_Analysis.ipynb)
+- [Merged Dataset](data/merged/merged_dataset.csv)
+
 
 For this project, we used integrated data from the World Bank World Development Indicators (WDI) and OECD Data Portal. We filtered this data to only EU countries. The final merged dataset includes:
 1. 25 EU Countries
