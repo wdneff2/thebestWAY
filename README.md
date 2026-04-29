@@ -10,18 +10,17 @@
 ---
 
 ## Summary
-<!-- Target: 500–600 words -->
 
 ### Motivation
-[Why did you choose this topic? What problem or gap does it address?]
+We chose this topic because understanding the link between economic development and population health is essential not only for academic insight but also for informed travel, living, and working abroad. With personal connections to the European Union and the region’s popularity as a post-graduation destination, we wanted to move beyond surface-level impressions of European countries and examine the actual socioeconomic and health conditions across them. While GDP per capita is often used as a shorthand for a nation’s well-being, important gaps remain in understanding whether wealth alone guarantees better health outcomes—or whether factors like health spending efficiency and regional policy matter more. This project addresses those gaps by systematically analyzing whether economic indicators translate into tangible health system performance across European countries.
+
 
 ### Research Questions
-1. [Research question 1]
-2. [Research question 2]
+1. How do socioeconomic indicators like GDP per capita and government health expenditure correlate to key public health outcomes like life expectancy and infant mortality across European countries?
+2. Are there regional disparities in health outcomes that persist even after accounting for economic factors?
 
 ### Overview
-[Briefly describe your approach — what data did you use, what methods, and what did you do overall?]
-
+We used publicly available secondary data from the World Bank Open Data Portal and the OECD Data Portal, merging socioeconomic indicators (GDP per capita, current health expenditure as a percentage of GDP) with health system metrics (doctors per capita). The dataset spans European countries over multiple years (2000–2024, with GDP data extending to 1960). Our approach involved data cleaning, standardization, and integration using country and year identifiers, followed by exploratory data analysis and visualization. We generated scatter plots, calculated correlation coefficients, and constructed a correlation matrix to examine relationships between economic capacity, healthcare investment, and healthcare access. All data preprocessing and analysis are seen in `data/` and `analysis/` folders.
 ### Key Findings
 [High-level summary of what you found. You'll elaborate in the Findings section.]
 
