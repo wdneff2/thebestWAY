@@ -1,0 +1,479 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "STRUCTURE",
+    "description": "Remove column STRUCTURE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STRUCTURE_ID",
+    "description": "Remove column STRUCTURE_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STRUCTURE_NAME",
+    "description": "Remove column STRUCTURE_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ACTION",
+    "description": "Remove column ACTION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FREQ",
+    "description": "Remove column FREQ"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MEASURE",
+    "description": "Remove column MEASURE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Measure",
+    "description": "Remove column Measure"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UNIT_MEASURE",
+    "description": "Remove column UNIT_MEASURE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FINANCING_SCHEME",
+    "description": "Remove column FINANCING_SCHEME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OBS_STATUS3",
+    "description": "Remove column OBS_STATUS3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OBS_STATUS2",
+    "description": "Remove column OBS_STATUS2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Observation status",
+    "description": "Remove column Observation status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OBS_STATUS",
+    "description": "Remove column OBS_STATUS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Observation status 2",
+    "description": "Remove column Observation status 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Observation status 3",
+    "description": "Remove column Observation status 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Healthcare provider",
+    "description": "Remove column Healthcare provider"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PROVIDER",
+    "description": "Remove column PROVIDER"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FACTOR_PROVISION",
+    "description": "Remove column FACTOR_PROVISION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Mode of provision",
+    "description": "Remove column Mode of provision"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Reference area",
+    "newColumnName": "country",
+    "description": "Rename column Reference area to country"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Asset type",
+    "description": "Remove column Asset type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Price base",
+    "description": "Remove column Price base"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIME_PERIOD",
+    "newColumnName": "year",
+    "description": "Rename column TIME_PERIOD to year"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PRICE_BASE",
+    "description": "Remove column PRICE_BASE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ASSET_TYPE",
+    "description": "Remove column ASSET_TYPE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Factor of provision",
+    "description": "Remove column Factor of provision"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODE_PROVISION",
+    "description": "Remove column MODE_PROVISION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Health function",
+    "description": "Remove column Health function"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FUNCTION",
+    "description": "Remove column FUNCTION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Observation value",
+    "description": "Remove column Observation value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BASE_PER",
+    "description": "Remove column BASE_PER"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Base period",
+    "description": "Remove column Base period"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CURRENCY",
+    "description": "Remove column CURRENCY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Currency",
+    "description": "Remove column Currency"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Time period",
+    "description": "Remove column Time period"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OBS_VALUE",
+    "newColumnName": "health_spending",
+    "description": "Rename column OBS_VALUE to health_spending"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Revenues of financing schemes",
+    "description": "Remove column Revenues of financing schemes"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FINANCING_SCHEME_REV",
+    "description": "Remove column FINANCING_SCHEME_REV"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Unit of measure",
+    "description": "Remove column Unit of measure"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Frequency of observation",
+    "description": "Remove column Frequency of observation"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "REF_AREA",
+    "description": "Remove column REF_AREA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UNIT_MULT",
+    "description": "Remove column UNIT_MULT"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Unit multiplier",
+    "description": "Remove column Unit multiplier"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Financing scheme",
+    "description": "Remove column Financing scheme"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DECIMALS",
+    "description": "Remove column DECIMALS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Decimals",
+    "description": "Remove column Decimals"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "China (People’s Republic of)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "China"
+      }
+    ],
+    "description": "Mass edit cells in column country"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Slovak Republic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Slovakia"
+      }
+    ],
+    "description": "Mass edit cells in column country"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "country",
+          "expression": "value",
+          "columnName": "country",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Cyprus",
+                "l": "Cyprus"
+              }
+            },
+            {
+              "v": {
+                "v": "Portugal",
+                "l": "Portugal"
+              }
+            },
+            {
+              "v": {
+                "v": "Greece",
+                "l": "Greece"
+              }
+            },
+            {
+              "v": {
+                "v": "Latvia",
+                "l": "Latvia"
+              }
+            },
+            {
+              "v": {
+                "v": "Austria",
+                "l": "Austria"
+              }
+            },
+            {
+              "v": {
+                "v": "Luxembourg",
+                "l": "Luxembourg"
+              }
+            },
+            {
+              "v": {
+                "v": "Slovenia",
+                "l": "Slovenia"
+              }
+            },
+            {
+              "v": {
+                "v": "Hungary",
+                "l": "Hungary"
+              }
+            },
+            {
+              "v": {
+                "v": "Belgium",
+                "l": "Belgium"
+              }
+            },
+            {
+              "v": {
+                "v": "Finland",
+                "l": "Finland"
+              }
+            },
+            {
+              "v": {
+                "v": "Italy",
+                "l": "Italy"
+              }
+            },
+            {
+              "v": {
+                "v": "Germany",
+                "l": "Germany"
+              }
+            },
+            {
+              "v": {
+                "v": "Czechia",
+                "l": "Czechia"
+              }
+            },
+            {
+              "v": {
+                "v": "Malta",
+                "l": "Malta"
+              }
+            },
+            {
+              "v": {
+                "v": "Netherlands",
+                "l": "Netherlands"
+              }
+            },
+            {
+              "v": {
+                "v": "Sweden",
+                "l": "Sweden"
+              }
+            },
+            {
+              "v": {
+                "v": "Ireland",
+                "l": "Ireland"
+              }
+            },
+            {
+              "v": {
+                "v": "Poland",
+                "l": "Poland"
+              }
+            },
+            {
+              "v": {
+                "v": "Slovakia",
+                "l": "Slovakia"
+              }
+            },
+            {
+              "v": {
+                "v": "Lithuania",
+                "l": "Lithuania"
+              }
+            },
+            {
+              "v": {
+                "v": "Bulgaria",
+                "l": "Bulgaria"
+              }
+            },
+            {
+              "v": {
+                "v": "France",
+                "l": "France"
+              }
+            },
+            {
+              "v": {
+                "v": "Croatia",
+                "l": "Croatia"
+              }
+            },
+            {
+              "v": {
+                "v": "Romania",
+                "l": "Romania"
+              }
+            },
+            {
+              "v": {
+                "v": "Spain",
+                "l": "Spain"
+              }
+            },
+            {
+              "v": {
+                "v": "Denmark",
+                "l": "Denmark"
+              }
+            },
+            {
+              "v": {
+                "v": "Estonia",
+                "l": "Estonia"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Slovakia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Slovak Republic"
+      }
+    ],
+    "description": "Mass edit cells in column country"
+  }
+]

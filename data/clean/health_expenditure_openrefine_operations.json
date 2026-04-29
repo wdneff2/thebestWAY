@@ -1,0 +1,232 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "2026-04-08 Country Code",
+    "description": "Remove column 2026-04-08 Country Code"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Indicator Name",
+    "description": "Remove column Indicator Name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Indicator Code",
+    "description": "Remove column Indicator Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Last Updated Date Country Name",
+    "newColumnName": "country",
+    "description": "Rename column Last Updated Date Country Name to country"
+  },
+  {
+    "op": "core/transpose-columns-into-rows",
+    "startColumnName": "1960",
+    "columnCount": 66,
+    "ignoreBlankCells": true,
+    "fillDown": false,
+    "separator": null,
+    "keyColumnName": "year",
+    "valueColumnName": "health_expenditure",
+    "description": "Transpose cells in 66 column(s) starting with 1960 into rows in two new columns named year and health_expenditure"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "description": "Fill down cells in column country"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "country",
+          "expression": "value",
+          "columnName": "country",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Finland",
+                "l": "Finland"
+              }
+            },
+            {
+              "v": {
+                "v": "Sweden",
+                "l": "Sweden"
+              }
+            },
+            {
+              "v": {
+                "v": "Poland",
+                "l": "Poland"
+              }
+            },
+            {
+              "v": {
+                "v": "Bulgaria",
+                "l": "Bulgaria"
+              }
+            },
+            {
+              "v": {
+                "v": "Cyprus",
+                "l": "Cyprus"
+              }
+            },
+            {
+              "v": {
+                "v": "Slovak Republic",
+                "l": "Slovak Republic"
+              }
+            },
+            {
+              "v": {
+                "v": "Luxembourg",
+                "l": "Luxembourg"
+              }
+            },
+            {
+              "v": {
+                "v": "Slovenia",
+                "l": "Slovenia"
+              }
+            },
+            {
+              "v": {
+                "v": "Italy",
+                "l": "Italy"
+              }
+            },
+            {
+              "v": {
+                "v": "Netherlands",
+                "l": "Netherlands"
+              }
+            },
+            {
+              "v": {
+                "v": "Romania",
+                "l": "Romania"
+              }
+            },
+            {
+              "v": {
+                "v": "Portugal",
+                "l": "Portugal"
+              }
+            },
+            {
+              "v": {
+                "v": "Greece",
+                "l": "Greece"
+              }
+            },
+            {
+              "v": {
+                "v": "Latvia",
+                "l": "Latvia"
+              }
+            },
+            {
+              "v": {
+                "v": "Belgium",
+                "l": "Belgium"
+              }
+            },
+            {
+              "v": {
+                "v": "Germany",
+                "l": "Germany"
+              }
+            },
+            {
+              "v": {
+                "v": "Croatia",
+                "l": "Croatia"
+              }
+            },
+            {
+              "v": {
+                "v": "Spain",
+                "l": "Spain"
+              }
+            },
+            {
+              "v": {
+                "v": "Estonia",
+                "l": "Estonia"
+              }
+            },
+            {
+              "v": {
+                "v": "Austria",
+                "l": "Austria"
+              }
+            },
+            {
+              "v": {
+                "v": "Hungary",
+                "l": "Hungary"
+              }
+            },
+            {
+              "v": {
+                "v": "Czechia",
+                "l": "Czechia"
+              }
+            },
+            {
+              "v": {
+                "v": "Malta",
+                "l": "Malta"
+              }
+            },
+            {
+              "v": {
+                "v": "Ireland",
+                "l": "Ireland"
+              }
+            },
+            {
+              "v": {
+                "v": "France",
+                "l": "France"
+              }
+            },
+            {
+              "v": {
+                "v": "Lithuania",
+                "l": "Lithuania"
+              }
+            },
+            {
+              "v": {
+                "v": "Denmark",
+                "l": "Denmark"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]
