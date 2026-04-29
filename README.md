@@ -321,6 +321,14 @@ The results from above should be as follows:
    4. 4 years
    5. 0 missing values
 
+### Analysis Reproduction
+Run: jupyter notebook Analysis/Data\ Analysis.ipynb
+
+This line will provide you with the analysis we conducted with our merged dataset.
+
+### Software
+
+Install: pip install pandas matplotlib jupyter
 
 ## References
 
