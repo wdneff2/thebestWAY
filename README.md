@@ -21,13 +21,21 @@ We chose this topic because understanding the link between economic development 
 
 ### Overview
 We used publicly available secondary data from the World Bank Open Data Portal and the OECD Data Portal, merging socioeconomic indicators (GDP per capita, current health expenditure as a percentage of GDP) with health system metrics (doctors per capita). The dataset spans European countries over multiple years (2000–2024, with GDP data extending to 1960). Our approach involved data cleaning, standardization, and integration using country and year identifiers, followed by exploratory data analysis and visualization. We generated scatter plots, calculated correlation coefficients, and constructed a correlation matrix to examine relationships between economic capacity, healthcare investment, and healthcare access. All data preprocessing and analysis are seen in `data/` and `analysis/` folders.
+
 ### Key Findings
-[High-level summary of what you found. You'll elaborate in the Findings section.]
+- **Wealth strongly predicts healthcare access:** GDP per capita shows a strong positive correlation (0.78) with doctors per capita, indicating that richer European countries tend to have significantly better physician availability.
+
+- **Health spending alone does not guarantee access:** Health expenditure as a percentage of GDP correlates only moderately (0.46) with doctors per capita, with similar-spending countries showing wide variation in outcomes.
+
+- **Wealth does not drive health investment decisions:** There is virtually no correlation (0.02) between GDP per capita and health spending as a percentage of GDP, suggesting that healthcare investment reflects policy choices rather than economic capacity.
+
+- **High-income countries can achieve strong access with modest spending:** Luxembourg and Ireland, for example, maintain high doctors-per-capita levels despite allocating only about 5.6–5.8% of GDP to health, pointing to potential system efficiencies.
+
+These findings suggest that while economic wealth facilitates better healthcare access, policy decisions and institutional efficiency may be equally important for achieving strong health outcomes—a nuance relevant to understanding regional disparities across Europe.
 
 ---
 
 ## Data Profile
-<!-- Target: max 2,000 words total across all datasets -->
 
 ### Dataset 1: Doctors per Capita
 
@@ -147,7 +155,6 @@ This dataset is directly relevant to the first research question, as it provides
 ---
 
 ## Data Quality
-<!-- Target: 500–1,000 words -->
 
 ### Assessment Approach
 [Briefly describe how you assessed quality — what scripts or tools did you use? Reference files in the repo, e.g., [`scripts/profile_data.py`](scripts/profile_data.py).]
