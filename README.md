@@ -41,7 +41,8 @@ These findings suggest that while economic wealth facilitates better healthcare 
 
 | Attribute | Detail |
 |-----------|--------|
-| **Source** | [URL or citation] |
+| **Identifier** | DSD_HEALTH_EMP_REAC@DF_PHYS |
+| **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealthcare%20human%20resources%23HEA_RES%23&pg=0&fc=Topic&bp=true&snb=15&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_EMP_REAC%40DF_PHYS&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=..10P3HB.....P.&pd=%2C&to[TIME_PERIOD]=false&lb=id |
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
 | **Format** | [e.g., CSV, JSON, Parquet] |
@@ -130,7 +131,8 @@ This dataset is directly relevant to the first research question, as it provides
 
 | Attribute | Detail |
 |-----------|--------|
-| **Source** | [URL or citation] |
+| **License** | DSD_TAXBEN_PTR@DF_PTRUB |
+| **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CEmployment%23JOB%23%7CBenefits%252C%20earnings%20and%20wages%23JOB_BW%23&pg=0&fc=Topic&bp=true&snb=21&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TAXBEN_PTR%40DF_PTRUB&df[ag]=OECD.ELS.JAI&df[vs]=1.0&dq=...AW67.C_C2..AW67%2B_Z..M2.YES.NO.NO...A&to[TIME_PERIOD]=false&vw=ov&pd=%2C&lb=bt |
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/health_spending_raw.csv/` |
 | **Format** | [e.g., CSV, JSON] |
