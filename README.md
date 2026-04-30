@@ -41,6 +41,10 @@ These findings suggest that while economic wealth facilitates better healthcare 
 
 | Attribute | Detail |
 |-----------|--------|
+| **Dataset Name** | xx |
+| **Modified** | xx |
+| **Access Level** | xx |
+| **Contact Point** | xx |
 | **Identifier** | DSD_HEALTH_EMP_REAC@DF_PHYS |
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealthcare%20human%20resources%23HEA_RES%23&pg=0&fc=Topic&bp=true&snb=15&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_EMP_REAC%40DF_PHYS&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=..10P3HB.....P.&pd=%2C&to[TIME_PERIOD]=false&lb=id |
 | **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
