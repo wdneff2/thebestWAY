@@ -41,10 +41,7 @@ These findings suggest that while economic wealth facilitates better healthcare 
 
 | Attribute | Detail |
 |-----------|--------|
-| **Dataset Name** | xx |
-| **Modified** | xx |
-| **Access Level** | xx |
-| **Contact Point** | xx |
+| **Access Level** | Public |
 | **Identifier** | DSD_HEALTH_EMP_REAC@DF_PHYS |
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealthcare%20human%20resources%23HEA_RES%23&pg=0&fc=Topic&bp=true&snb=15&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_EMP_REAC%40DF_PHYS&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=..10P3HB.....P.&pd=%2C&to[TIME_PERIOD]=false&lb=id |
 | **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
@@ -74,6 +71,7 @@ This dataset is directly relevant to both research questions. For the first rese
 
 | Attribute | Detail |
 |-----------|--------|
+| **Access Level** | Public |
 | **ID** | NY.GDP.PCAP.CD |
 | **Source** | Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development ( OECD ); Staff estimates, World Bank ( WB ) |
 | **License** | CC BY-4.0 |
@@ -104,6 +102,7 @@ This dataset is directly relevant to the first research question, as it provides
 
 | Attribute | Detail |
 |-----------|--------|
+| **Access Level** | Public |
 | **ID** | SH.XPD.CHEX.GD.ZS |
 | **Source** | Global Health Expenditure Database, updated December 12th, 2025, World Health Organization ( WHO ), uri: apps.who.int/nha/database |
 | **License** | CC BY-4.0 |
@@ -134,6 +133,7 @@ This dataset is directly relevant to the first research question, as it provides
 
 | Attribute | Detail |
 |-----------|--------|
+| **Access Level** | Public |
 | **License** | DSD_SHA@DF_SHA |
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealth%20expenditure%20and%20financing%23HEA_EXP%23&pg=0&fc=Topic&bp=true&snb=4&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_SHA%40DF_SHA&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=.A.EXP_HEALTH.PT_B1GQ._T.._T.._T...&to[TIME_PERIOD]=false&pd=2015%2C&isAvailabilityDisabled=false&lb=id |
 | **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
@@ -225,38 +225,6 @@ The general state of the data after cleaning is **good**, but several important 
 - **Loss of quality flags:** Status columns (`OBS_STATUS`, etc.) indicating provisional, estimated, or definitionally different values were removed. This is significant because recent years often contain provisional data, and cross-country comparability (especially for doctors per capita) is affected.
 - **Limited historical coverage:** Eastern European countries lack GDP data before 1990–1995, limiting long-term trend analysis - though they fall out of the scope for the project, it limits the generalizability and future work of the project.
 - **Filtered scope:** Data was filtered to 27 European countries; results are not globally generalizable.
-
----
-
-## Data Cleaning
-<!-- Target: max 1,000 words -->
-
-> Scripts: [`scripts/clean_data.py`](scripts/clean_data.py) <!-- update as needed -->
-
-### Operation 1: [e.g., Remove duplicate records]
-- **Issue:** [What problem did this address?]
-- **Action:** [What did you do, specifically?]
-- **Script/Tool:** [`scripts/clean_data.py`](scripts/clean_data.py), lines XX–XX
-
-### Operation 2: [e.g., Standardize date formats]
-- **Issue:** [...]
-- **Action:** [...]
-- **Script/Tool:** [...]
-
-### Operation 3: [e.g., Handle missing values]
-- **Issue:** [...]
-- **Action:** [...]
-- **Script/Tool:** [...]
-
-### Operation 4: [e.g., Normalize column names]
-- **Issue:** [...]
-- **Action:** [...]
-- **Script/Tool:** [...]
-
-<!-- Add more operations as needed -->
-
-### OpenRefine
-[If applicable, describe any operations performed in OpenRefine. The JSON recipe should be saved at `scripts/openrefine_recipe.json`.]
 
 ---
 
