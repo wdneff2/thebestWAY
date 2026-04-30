@@ -43,14 +43,14 @@ These findings suggest that while economic wealth facilitates better healthcare 
 |-----------|--------|
 | **Identifier** | DSD_HEALTH_EMP_REAC@DF_PHYS |
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealthcare%20human%20resources%23HEA_RES%23&pg=0&fc=Topic&bp=true&snb=15&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_EMP_REAC%40DF_PHYS&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=..10P3HB.....P.&pd=%2C&to[TIME_PERIOD]=false&lb=id |
-| **License** | CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
+| **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
 | **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
 | **Format** | CSV |
 | **Size** | 159 rows x 40 columns |
 | **Raw Reference Period** | 1960-2024 |
 
 **Description:**
-[What does this dataset contain? Where does it come from? Who collected it and for what purpose?]
+This dataset contains the number of practicing physicians (doctors) per 1,000 population (or per capita) across OECD member and partner countries. The data comes from the OECD Health Statistics database under the DSD_HEALTH_EMP_REAC@DF_PHYS dataflow, which is part of the broader OECD.Stat health workforce collection. The OECD collects these data to enable cross-country comparisons of healthcare human resources, support health system performance assessments, and inform workforce planning policies. The file covers a wide time range (1960–2024 for some countries), though coverage varies significantly by country.
 
 **Key Variables:**
 | Field | Type | Description |
@@ -59,10 +59,10 @@ These findings suggest that while economic wealth facilitates better healthcare 
 | `TIME_PERIOD` | integer | The associated Doctors per 1000 for the respecitive coutnry during the year as presented for standarization |
 
 **Ethical & Legal Constraints:**
-[Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
+This dataset is sourced from the OECD (Organisation for Economic Co-operation and Development) and is typically provided under an open license (e.g., CC BY 4.0 or similar) for non-commercial use with attribution, though specific license terms should be verified on the official OECD website. There are no privacy concerns, as the data are aggregated at the national level and contain no individual or patient information. Several bias and limitation concerns should be noted: (1) Coverage gaps exist, with many countries having incomplete time series, particularly for Eastern European nations in earlier decades. (2) Recent years (2020–2024) frequently contain provisional or estimated values that may be revised. (3) Redistribution is permitted with appropriate attribution to the OECD, but users should verify the exact license terms.
 
 **Relevance to Research Questions:**
-[How does this dataset help answer your specific research questions?]
+This dataset is directly relevant to both research questions. For the first research question (how socioeconomic indicators like GDP per capita and health expenditure correlate with public health outcomes), the doctors per capita measure serves as a key healthcare access / health system resource indicator—a mediating factor between economic capacity and population health outcomes such as life expectancy and infant mortality. By merging this dataset with GDP per capita and health spending data, the project can assess whether wealthier European countries translate economic resources into greater physician availability. For the second research question (regional disparities in health outcomes after accounting for economic factors), this dataset enables country-level comparisons of healthcare workforce capacity, helping to identify whether Eastern and Western European countries with similar GDP per capita exhibit different levels of physician access, which may explain persistent health outcome disparities.
 
 ---
 
@@ -132,7 +132,7 @@ This dataset is directly relevant to the first research question, as it provides
 |-----------|--------|
 | **License** | DSD_SHA@DF_SHA |
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealth%20expenditure%20and%20financing%23HEA_EXP%23&pg=0&fc=Topic&bp=true&snb=4&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_SHA%40DF_SHA&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=.A.EXP_HEALTH.PT_B1GQ._T.._T.._T...&to[TIME_PERIOD]=false&pd=2015%2C&isAvailabilityDisabled=false&lb=id |
-| **License** | CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
+| **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
 | **Location in repo** | `data/raw/health_spending_raw.csv/` |
 | **Format** | CSV |
 | **Size** | 499 rows x 46 columns |
