@@ -4,7 +4,7 @@
 
 ## Contributors
 - Autumn Rosedale (Data Cleaning Section, Initial Data Analysis, and Reproducability)
-- William Neff (Data Profile, Data Quality)
+- William Neff (Data Quality)
 - Yuri You (Data Analysis, Data Visualizations, Findings, Future Work, Challenges)
 
 ---
