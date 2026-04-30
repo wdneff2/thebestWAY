@@ -45,9 +45,9 @@ These findings suggest that while economic wealth facilitates better healthcare 
 | **Source** | https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CHealth%23HEA%23%7CHealthcare%20human%20resources%23HEA_RES%23&pg=0&fc=Topic&bp=true&snb=15&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_EMP_REAC%40DF_PHYS&df[ag]=OECD.ELS.HD&df[vs]=1.0&dq=..10P3HB.....P.&pd=%2C&to[TIME_PERIOD]=false&lb=id |
 | **License** | [e.g., CC BY 4.0, Public Domain, Proprietary] |
 | **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
-| **Format** | [e.g., CSV, JSON, Parquet] |
+| **Format** | CSV |
 | **Size** | 159 rows x 40 columns |
-| **Date range / scope** | [e.g., 2018–2023, United States only] |
+| **Raw Reference Period** | 1960-2024 |
 
 **Description:**
 [What does this dataset contain? Where does it come from? Who collected it and for what purpose?]
