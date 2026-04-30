@@ -1,10 +1,8 @@
-##notes from examples - explain what each of us did in relation to the modules in class, shorter summary (not too long), where the dataset is, how did we get it and licnense, quality and cleaning like accuracy, completeness, timeliness, etc in relation to each set, be as indepth as possible whule also acknowledging needing to be short and brief, be in depth with the reproducability 
-
 # Euros and Years: Does Money Buy a Longer Life in Europe?
 
 ## Contributors
 - Autumn Rosedale (Data Cleaning Section, Initial Data Analysis, and Reproducability)
-- William Neff
+- William Neff (Summary, Data Profile, Data Quality)
 - Yuri You (Data Analysis, Data Visualizations, Findings, Future Work, Challenges)
 
 ---
