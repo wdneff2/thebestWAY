@@ -55,7 +55,7 @@ These findings suggest that while economic wealth facilitates better healthcare 
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `REF_AREA` | string | [Description] |
+| `REF_AREA` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
 | TIME_PERIOD | integer | [Description] |
 
 **Ethical & Legal Constraints:**
@@ -144,7 +144,7 @@ This dataset is directly relevant to the first research question, as it provides
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `REF_AREA` | string | [Description] |
+| `REF_AREA` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
 | `TIME_PERIOD` | date | [Description] |
 
 **Ethical & Legal Constraints:**
