@@ -56,7 +56,7 @@ These findings suggest that while economic wealth facilitates better healthcare 
 | Field | Type | Description |
 |-------|------|-------------|
 | `REF_AREA` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
-| TIME_PERIOD | integer | [Description] |
+| `TIME_PERIOD` | integer | The associated Doctors per 1000 for the respecitive coutnry during the year as presented for standarization |
 
 **Ethical & Legal Constraints:**
 [Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
@@ -145,7 +145,7 @@ This dataset is directly relevant to the first research question, as it provides
 | Field | Type | Description |
 |-------|------|-------------|
 | `REF_AREA` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
-| `TIME_PERIOD` | date | [Description] |
+| `TIME_PERIOD` | date | The associated Health spending as a % of their GDP for the respecitive coutnry during the year as presented for standarization |
 
 **Ethical & Legal Constraints:**
 [Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
