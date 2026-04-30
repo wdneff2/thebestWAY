@@ -46,7 +46,7 @@ These findings suggest that while economic wealth facilitates better healthcare 
 | **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
 | **Location in repo** | `data/raw/doctors_per_capita_raw.csv/` |
 | **Format** | CSV |
-| **Size** | 159 rows x 40 columns |
+| **Size** | 159 rows x 40 columns > 147 KB |
 | **Raw Reference Period** | 1960-2024 |
 
 **Description:**
@@ -135,11 +135,11 @@ This dataset is directly relevant to the first research question, as it provides
 | **License** | Open License assumed CC BY 4.0 - though not explicitly stated on the home page of the data, the OECD Data Policy can be found here (https://www.oecd.org/en/about/oecd-open-by-default-policy.html) |
 | **Location in repo** | `data/raw/health_spending_raw.csv/` |
 | **Format** | CSV |
-| **Size** | 499 rows x 46 columns |
+| **Size** | 499 rows x 46 columns > 51KB |
 | **Raw Reference Period** | 2015-2024 |
 
 **Description:**
-[What does this dataset contain?]
+This dataset contains annual health expenditure estimates for OECD member and partner countries, structured according to the System of Health Accounts 2011 (SHA 2011) framework. It captures total current health expenditure as a percentage of GDP, representing spending on healthcare goods and services consumed during the year, excluding capital investments. The data is collected through a joint effort by the OECD, WHO, and the European Commission to create a globally standardized framework for tracking financial flows in healthcare — from funding sources to service provision. The dataset covers multiple dimensions including financing schemes, healthcare functions, and providers, though the filtered version focuses on total expenditure.
 
 **Key Variables:**
 | Field | Type | Description |
@@ -148,10 +148,10 @@ This dataset is directly relevant to the first research question, as it provides
 | `TIME_PERIOD` | date | The associated Health spending as a % of their GDP for the respecitive coutnry during the year as presented for standarization |
 
 **Ethical & Legal Constraints:**
-[Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
+This dataset is sourced from the OECD (Organisation for Economic Co-operation and Development) and is typically provided under an open license (e.g., CC BY 4.0 or similar) for non-commercial use with attribution, though specific license terms should be verified on the official OECD website. There are no privacy concerns, as the data are aggregated at the national level and contain no individual or patient information. Several bias and limitation concerns should be noted: (1) Coverage gaps exist, with many countries having incomplete time series, particularly for Eastern European nations in earlier decades. (2) Recent years (2020–2024) frequently contain provisional or estimated values that may be revised. (3) Redistribution is permitted with appropriate attribution to the OECD, but users should verify the exact license terms.
 
 **Relevance to Research Questions:**
-[How does this dataset connect to your research questions?]
+This dataset is directly relevant to the first research question, which investigates how socioeconomic indicators like GDP per capita and government health expenditure correlate with public health outcomes such as life expectancy and infant mortality across European countries. Specifically, the health expenditure as a percentage of GDP is the second key socioeconomic factor in the project's analysis. By merging this dataset with GDP per capita and doctors per capita data, the project can assess: whether countries that allocate a larger share of their economy to current health spending achieve better health outcomes, the relationship between health spending and healthcare access (doctors per capita), Whether health spending reflects national policy priorities rather than simply economic wealth. For the second research question (regional disparities in health outcomes after accounting for economic factors), this dataset enables examination of whether Eastern and Western European countries with similar GDP levels allocate different shares of their economies to healthcare, potentially explaining persistent health outcome disparities.
 
 ---
 
