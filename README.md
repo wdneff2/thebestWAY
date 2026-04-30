@@ -55,9 +55,8 @@ These findings suggest that while economic wealth facilitates better healthcare 
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `field_name` | string | [Description] |
-| `field_name` | integer | [Description] |
-| `field_name` | float | [Description] |
+| `REF_AREA` | string | [Description] |
+| TIME_PERIOD | integer | [Description] |
 
 **Ethical & Legal Constraints:**
 [Discuss licensing, privacy implications, redistribution restrictions, or any bias concerns.]
@@ -145,8 +144,8 @@ This dataset is directly relevant to the first research question, as it provides
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
-| `field_name` | string | [Description] |
-| `field_name` | date | [Description] |
+| `REF_AREA` | string | [Description] |
+| `TIME_PERIOD` | date | [Description] |
 
 **Ethical & Legal Constraints:**
 [Discuss licensing, privacy, redistribution restrictions, or bias concerns.]
