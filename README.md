@@ -428,11 +428,3 @@ This line will provide you with the analysis we conducted with our merged datase
 ### Software
 
 Install: pip install pandas matplotlib jupyter
-
-## References
-
-<!-- Use a consistent format (APA, Chicago, etc.) -->
-
-1. [Author(s). (Year). *Dataset/Paper title*. Publisher. https://doi.org/...]
-2. [Author(s). (Year). *Dataset/Paper title*. Publisher. https://doi.org/...]
-3. [Software: e.g., McKinney, W. (2010). pandas. https://pandas.pydata.org]
