@@ -172,14 +172,28 @@ Our assessment process involved the following steps:
 
 All cleaning steps are fully reproducible by importing the JSON operation files into OpenRefine and applying them to the original raw data files.
 
-### Dataset 1: [Name]
+### Dataset 1: Doctors per capita
 - **Completeness:** [e.g., "Field X had 4.2% missing values; field Y was fully populated."]
 - **Consistency:** [e.g., "Date formats were inconsistent across rows (MM/DD/YYYY vs YYYY-MM-DD)."]
 - **Accuracy:** [e.g., "Several numeric outliers detected in column Z; values above 999 appeared erroneous."]
 - **Duplicates:** [e.g., "Found 312 duplicate rows based on composite key (id, date)."]
 - **Other issues:** [Any additional concerns.]
 
-### Dataset 2: [Name]
+### Dataset 2: GDP per capita
+- **Completeness:** [...]
+- **Consistency:** [...]
+- **Accuracy:** [...]
+- **Duplicates:** [...]
+- **Other issues:** [...]
+
+### Dataset 3: Health Expenditure
+- **Completeness:** [...]
+- **Consistency:** [...]
+- **Accuracy:** [...]
+- **Duplicates:** [...]
+- **Other issues:** [...]
+
+### Dataset 4: Health Spending
 - **Completeness:** [...]
 - **Consistency:** [...]
 - **Accuracy:** [...]
