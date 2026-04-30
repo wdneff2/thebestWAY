@@ -209,7 +209,18 @@ All cleaning steps are fully reproducible by importing the JSON operation files 
 - **Other issues:** The OpenRefine workflow removed all status columns (`OBS_STATUS`, `OBS_STATUS2`, `OBS_STATUS3`), which originally indicated provisional values, estimated values, and time series breaks. This information loss could be problematic for interpreting recent years (2022–2024), where many values were flagged as provisional or estimated. Additionally, the unit of measure (`PT_B1GQ` = percentage of GDP) is consistent but not explicitly documented in the cleaned file.
 
 ### Summary
-[Overall takeaway — what was the general state of the data? Were quality issues minor or significant?]
+The general state of the data after cleaning is **good**, but several important caveats remain.
+
+#### Positive Takeaways
+- All four datasets were successfully transformed into clean, analysis-ready long-format tables with standardized columns.
+- No duplicate rows were found based on `(country, year)` pairs.
+- All numeric values fall within plausible ranges.
+- Coverage for recent years (2015–2024) is strong across the 27 European countries.
+
+#### Key Caveats
+- **Loss of quality flags:** Status columns (`OBS_STATUS`, etc.) indicating provisional, estimated, or definitionally different values were removed. This is significant because recent years often contain provisional data, and cross-country comparability (especially for doctors per capita) is affected.
+- **Limited historical coverage:** Eastern European countries lack GDP data before 1990–1995, limiting long-term trend analysis - though they fall out of the scope for the project, it limits the generalizability and future work of the project.
+- **Filtered scope:** Data was filtered to 27 European countries; results are not globally generalizable.
 
 ---
 
