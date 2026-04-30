@@ -4,7 +4,7 @@
 
 ## Contributors
 - Autumn Rosedale (Data Cleaning Section, Initial Data Analysis, and Reproducability)
-- William Neff (Data Quality)
+- William Neff
 - Yuri You (Data Analysis, Data Visualizations, Findings, Future Work, Challenges)
 
 ---
@@ -50,13 +50,13 @@ These findings suggest that while economic wealth facilitates better healthcare 
 | **Raw Reference Period** | 1960-2024 |
 
 **Description:**
-This dataset contains the number of practicing physicians (doctors) per 1,000 population (or per capita) across OECD member and partner countries. The data comes from the OECD Health Statistics database under the DSD_HEALTH_EMP_REAC@DF_PHYS dataflow, which is part of the broader OECD.Stat health workforce collection. The OECD collects these data to enable cross-country comparisons of healthcare human resources, support health system performance assessments, and inform workforce planning policies. The file covers a wide time range (1960–2024 for some countries), though coverage varies significantly by country.
+This dataset contains the number of practicing physicians (doctors) per 10,000 population (or per capita) across OECD member and partner countries. The data comes from the OECD Health Statistics database under the DSD_HEALTH_EMP_REAC@DF_PHYS dataflow, which is part of the broader OECD.Stat health workforce collection. The OECD collects these data to enable cross-country comparisons of healthcare human resources, support health system performance assessments, and inform workforce planning policies. The file covers a wide time range (1960–2024 for some countries), though coverage varies significantly by country.
 
 **Key Variables:**
 | Field | Type | Description |
 |-------|------|-------------|
 | `REF_AREA` | string | Standardized way of presenting the country due from the International Organization for Standardization (ISO) under the ISO 3166 standard. This system provides recognized codes for countries, dependent territories, and special geographic areas |
-| `TIME_PERIOD` | integer | The associated Doctors per 1000 for the respecitive coutnry during the year as presented for standarization |
+| `TIME_PERIOD` | integer | The associated Doctors per 10,000 for the respecitive coutnry during the year as presented for standarization |
 
 **Ethical & Legal Constraints:**
 This dataset is sourced from the OECD (Organisation for Economic Co-operation and Development) and is typically provided under an open license (e.g., CC BY 4.0 or similar) for non-commercial use with attribution, though specific license terms should be verified on the official OECD website. There are no privacy concerns, as the data are aggregated at the national level and contain no individual or patient information. Several bias and limitation concerns should be noted: (1) Coverage gaps exist, with many countries having incomplete time series, particularly for Eastern European nations in earlier decades. (2) Recent years (2020–2024) frequently contain provisional or estimated values that may be revised. (3) Redistribution is permitted with appropriate attribution to the OECD, but users should verify the exact license terms.
@@ -172,33 +172,41 @@ Our assessment process involved the following steps:
 
 All cleaning steps are fully reproducible by importing the JSON operation files into OpenRefine and applying them to the original raw data files.
 
-### Dataset 1: Doctors per capita
-- **Completeness:** [e.g., "Field X had 4.2% missing values; field Y was fully populated."]
-- **Consistency:** [e.g., "Date formats were inconsistent across rows (MM/DD/YYYY vs YYYY-MM-DD)."]
-- **Accuracy:** [e.g., "Several numeric outliers detected in column Z; values above 999 appeared erroneous."]
-- **Duplicates:** [e.g., "Found 312 duplicate rows based on composite key (id, date)."]
-- **Other issues:** [Any additional concerns.]
+### Dataset 1: Doctors per Capita
+**Comparison of Raw vs. Cleaned:** The raw file (`doctors_per_capita_raw.csv`) contained OECD health workforce data for all OECD countries with extensive metadata columns. The cleaned file (`doctors_per_capita.csv`) was filtered to European countries and only includes rows where `HEALTH_PROF` = `PHYS` (physicians) and `UNIT_MEASURE` = `10P3HB` (per 10,000 population), with columns standardized.
 
-### Dataset 2: GDP per capita
-- **Completeness:** [...]
-- **Consistency:** [...]
-- **Accuracy:** [...]
-- **Duplicates:** [...]
-- **Other issues:** [...]
+- **Completeness:** The raw file contained many non-European countries (e.g., AUS, CAN, COL, CRI, ISR, JPN, KOR, MEX, NZL, USA, BRA, IDN, PER, RUS, ZAF) that were filtered out. After filtering to European countries, completeness is variable: some countries have long time series (e.g., Austria, Belgium, Czechia from 1960s onward), while others have limited years (e.g., France only from 2021–2023, Ireland from 2015–2024). The cleaned file shows data primarily from 2020–2024 for most European countries.
+- **Consistency:** Raw data had extensive metadata columns (`STRUCTURE`, `STRUCTURE_ID`, `AGE`, `SEX`, `WORKER_STATUS`, `OBS_STATUS`, etc.) that were removed. The OpenRefine workflow standardized column names (`Reference area` → `country`, `TIME_PERIOD` → `year`, `OBS_VALUE` → `doctors_per_capita`). However, note that the cleaned file does not document the unit of measure (which is per 10,000 population, not per 1,000 as implied by the column name).
+- **Accuracy:** Values range from approximately **2.4 (Mexico) to 21.4 (Norway)** . The raw file contained `OBS_STATUS` flags (e.g., `P` for provisional, `E` for estimated, `B` for time series break, `D` for definition differs) that were removed during cleaning. This is a significant issue because definitional differences between countries (e.g., whether "practicing physicians" includes only active practitioners or all licensed physicians) affect cross-country comparability.
+- **Duplicates:** No duplicate rows were detected after filtering and cleaning. The raw file had unique combinations of dimensions, and the row-removal operation filtered to specific European countries and `HEALTH_PROF` = `PHYS`.
+- **Other issues:** The most significant issue is the **loss of unit information** and **status flags**. The raw `UNIT_MEASURE` column indicated `10P3HB` (practicing physicians per 10,000 population), but the cleaned file's column name `doctors_per_capita` is ambiguous. Additionally, all `OBS_STATUS` flags (indicating provisional values, definitional differences, time series breaks) were removed, making it impossible to assess data quality or comparability across countries. For example, Ireland (2022), Slovenia (2022–2023), and many values for France, Germany, and Greece have definitional differences or provisional statuses that are now invisible to analysts.
+
+### Dataset 2: GDP per Capita
+**Comparison of Raw vs. Cleaned:** The raw file (`gdp_per_capita_raw.csv`) contained data for all countries globally from 1960–2025 in wide format (years as separate columns). The cleaned file (`gdp_per_capita.csv`) was filtered to 27 European countries and transformed to long format (country, year, gdp_per_capita).
+
+- **Completeness:** Raw data had extensive missing values for early years (1960–1985) across many European countries (e.g., Bulgaria, Croatia, Estonia, Lithuania, Romania, Slovakia, Slovenia lacked data before 1980–1995). After filtering to European countries and years 1990–2024, completeness improved significantly, with nearly all targeted country-year pairs populated. Missing values remain for some Eastern European countries in the early 1990s.
+- **Consistency:** Raw data had inconsistent column naming (e.g., "Data Source", "Last Updated Date" as initial rows). Country names were consistent (e.g., "Czechia", "Slovak Republic"). The OpenRefine workflow standardized column names (`country`, `year`, `gdp_per_capita`) and transposed years from wide to long format, resolving structural inconsistencies. GDP values are uniformly expressed in current US dollars.
+- **Accuracy:** Values are within plausible ranges (e.g., Austria from ~$940 in 1960 to ~$58,000 in 2024; Luxembourg from ~$2,200 in 1960 to ~$137,000 in 2024). No obvious negative values or extreme outliers were detected. However, users should note that current US$ estimates do not account for inflation or purchasing power parity (PPP), which may distort cross-country comparisons.
+- **Duplicates:** No duplicate rows were found after cleaning. The raw wide format had unique country-year combinations implicitly; after transposition to long format and filtering, each `(country, year)` pair appears at most once.
+- **Other issues:** The raw file included metadata rows (e.g., "Data Source", "Last Updated Date") that were removed during cleaning. The OpenRefine operation filtered to 27 specific European countries, meaning results are not generalizable globally. Former Eastern bloc countries have limited historical coverage prior to 1990 due to data availability.
 
 ### Dataset 3: Health Expenditure
-- **Completeness:** [...]
-- **Consistency:** [...]
-- **Accuracy:** [...]
-- **Duplicates:** [...]
-- **Other issues:** [...]
+**Comparison of Raw vs. Cleaned:** The raw file (`health_expenditure_raw.csv`) contained World Bank data for all countries from 1960–2025 in wide format. The cleaned file (`health_expenditure.csv`) was filtered to 27 European countries and transformed to long format (country, year, health_expenditure) covering 2000–2024.
+
+- **Completeness:** Raw data had extensive empty cells, particularly for early years and non-reporting countries. After filtering to European countries and restricting to years 2000–2024, completeness is excellent with **no missing values** for the target countries.
+- **Consistency:** Raw data contained inconsistent header rows (e.g., "Data Source", "Last Updated Date", "Country Name", "Country Code"). The OpenRefine workflow removed these, renamed columns, and transposed years from wide to long format. The indicator uses a consistent unit of measure (percentage of GDP) across all rows.
+- **Accuracy:** Values range from approximately **4.2% (Romania, early 2000s) to 12.7% (Germany, 2021)** , which are plausible for OECD/European countries. No obvious outliers were detected. However, this indicator excludes capital health expenditures (buildings, IT, vaccines for outbreaks), so it may underrepresent total health investment in some countries.
+- **Duplicates:** No duplicate rows were detected after cleaning. The transpose operation creates unique `(country, year)` combinations, and row-filtering retained only target countries. The raw file had no duplicate issues.
+- **Other issues:** The raw file contained many non-European countries and aggregated regional groups (e.g., "Africa Eastern and Southern", "Euro area") that were removed via filtering. The OpenRefine operation removed status columns (`OBS_STATUS`), meaning users lose visibility into whether later-year values (2023–2024) are provisional or estimated. This could affect interpretation of the most recent years.
 
 ### Dataset 4: Health Spending
-- **Completeness:** [...]
-- **Consistency:** [...]
-- **Accuracy:** [...]
-- **Duplicates:** [...]
-- **Other issues:** [...]
+**Comparison of Raw vs. Cleaned:** The raw file (`health_spending_raw.csv`) contained OECD SHA 2011 health expenditure data for all OECD countries with extensive metadata columns. The cleaned file (`health_spending.csv`) kept only essential columns (`country`, `year`, `health_spending`) and filtered to the same 27 European countries.
+
+- **Completeness:** The raw file contained many non-European countries (e.g., IDN, IND, PER, ARG, USA, CHN, BRA, ZAF). After filtering to 27 European countries, completeness is good, though coverage varies by country and year (e.g., some countries have data only for specific years). The cleaned file shows multiple years per country, typically ranging from 2015–2024.
+- **Consistency:** Raw data had extensive metadata columns (`STRUCTURE`, `STRUCTURE_ID`, `OBS_STATUS`, `CURRENCY`, `DECIMALS`, etc.) that were removed. Column names were standardized (`Reference area` → `country`, `TIME_PERIOD` → `year`, `OBS_VALUE` → `health_spending`). Country names were mass-edited for consistency (e.g., "China (People's Republic of)" → "China", "Slovak Republic" → "Slovakia" and back to "Slovak Republic").
+- **Accuracy:** Values range from approximately **4.9% (Romania, 2015) to 12.7% (Germany, 2021)** , which are plausible. The raw file contained `OBS_STATUS` flags (e.g., `P` for provisional, `E` for estimated, `B` for time series break) that were removed during cleaning. This means users lose visibility into data quality flags for specific observations.
+- **Duplicates:** No duplicate rows were identified after cleaning. The row-removal operation filtered to specific European countries, and the remaining rows have unique `(country, year)` combinations.
+- **Other issues:** The OpenRefine workflow removed all status columns (`OBS_STATUS`, `OBS_STATUS2`, `OBS_STATUS3`), which originally indicated provisional values, estimated values, and time series breaks. This information loss could be problematic for interpreting recent years (2022–2024), where many values were flagged as provisional or estimated. Additionally, the unit of measure (`PT_B1GQ` = percentage of GDP) is consistent but not explicitly documented in the cleaned file.
 
 ### Summary
 [Overall takeaway — what was the general state of the data? Were quality issues minor or significant?]
