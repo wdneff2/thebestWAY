@@ -341,13 +341,14 @@ Here are the files needed for the following:
 
 #### Reproducibility Files
 
-Full OpenRefine operation histories are included for each cleaned dataset:
+We cleaned all four datasets in OpenRefine, and the full OpenRefine operation histories are included for each cleaned dataset below:
 
 - [GDP Cleaning Operations](data/clean/gdp_openrefine_operations.json)
 - [Health Expenditure Cleaning Operations](data/clean/health_expenditure_openrefine_operations.json)
 - [Health Spending Cleaning Operations](data/clean/health_spending_openrefine_operations.json)
 - [Doctors per Capita Cleaning Operations](data/clean/doctors_openrefine_operations.json)
 
+The dataset merging and analysis were done in Python using Visual Code Studio:
 - [Analysis Notebook](Analysis/Data_Analysis.ipynb)
 - [Merged Dataset](data/merged/merged_dataset.csv)
 
