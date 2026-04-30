@@ -158,7 +158,19 @@ This dataset is directly relevant to the first research question, which investig
 ## Data Quality
 
 ### Assessment Approach
-[Briefly describe how you assessed quality — what scripts or tools did you use? Reference files in the repo, e.g., [`scripts/profile_data.py`](scripts/profile_data.py).]
+We assessed data quality and performed cleaning using **OpenRefine**, a powerful open-source tool for data wrangling and transformation. The complete cleaning workflows are documented in the following JSON files in the `clean/` folder in the repository
+
+Our assessment process involved the following steps:
+
+1. **Initial exploration:** We loaded each raw dataset into OpenRefine to examine column structure, data types, missing values, and overall consistency.
+2. **Column removal:** We removed extraneous metadata columns (e.g., `STRUCTURE`, `STRUCTURE_ID`, `OBS_STATUS`, `CURRENCY`, `DECIMALS`) that were not needed for analysis, as documented by the repeated `core/column-removal` operations in each JSON file.
+3. **Column renaming:** We renamed key columns for clarity and consistency across datasets (e.g., `Reference area` → `country`, `TIME_PERIOD` → `year`, `OBS_VALUE` → `health_spending`).
+4. **Data transformation:** For the World Bank datasets (GDP per capita and health expenditure), we transposed the data from **wide format** (years as separate columns) to **long format** (rows of country-year pairs) using the `core/transpose-columns-into-rows` operation.
+5. **Standardization:** We applied `core/mass-edit` operations to standardize country names (e.g., "China (People's Republic of)" → "China", "Slovak Republic" → "Slovakia" and then back to "Slovak Republic" for consistency with other datasets).
+6. **Filtering:** We used `core/row-removal` with list facets to filter the data to **27 European countries** of interest for the project, removing all non-European and non-target countries.
+7. **Missing value handling:** The `fill-down` operation was used to propagate country names down through transposed rows, ensuring each row had a valid country identifier. Blank cells were ignored during transposition (`ignoreBlankCells: true`).
+
+All cleaning steps are fully reproducible by importing the JSON operation files into OpenRefine and applying them to the original raw data files.
 
 ### Dataset 1: [Name]
 - **Completeness:** [e.g., "Field X had 4.2% missing values; field Y was fully populated."]
