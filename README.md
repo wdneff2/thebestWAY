@@ -10,12 +10,11 @@
 ## Summary
 
 ### Motivation
-We chose this topic because understanding the link between economic development and population health is essential not only for academic insight but also for informed travel, living, and working abroad. With personal connections to the European Union and the region’s popularity as a post-graduation destination, we wanted to move beyond surface-level impressions of European countries and examine the actual socioeconomic and health conditions across them. While GDP per capita is often used as a shorthand for a nation’s well-being, important gaps remain in understanding whether wealth alone guarantees better health outcomes—or whether factors like health spending efficiency and regional policy matter more. This project addresses those gaps by systematically analyzing whether economic indicators translate into tangible health system performance across European countries.
-
+We chose this topic because understanding the link between economic development and population health is essential not only for academic insight but also for informed travel, living, and working abroad. With personal connections to the European Union and the region’s popularity as a post-graduation destination, we wanted to move beyond surface-level impressions of European countries and examine the actual socioeconomic and health conditions across them. While GDP per capita is often used as a shorthand for a nation’s well-being, important gaps remain in understanding whether wealth alone guarantees better health outcomes-or whether factors like health spending efficiency and regional policy matter more. This project addresses those gaps by systematically analyzing whether economic indicators translate into tangible health system performance across European countries.
 
 ### Research Questions
-1. How do socioeconomic indicators like GDP per capita and government health expenditure correlate to key public health outcomes like life expectancy and infant mortality across European countries?
-2. Are there regional disparities in health outcomes that persist even after accounting for economic factors?
+1. How do socioeconomic indicators like GDP per capita and health expenditure relate to healthcare access, as measured by doctors per capita, across European countries?
+2. Do differences in healthcare access persist across countries even when they have similar levels of economic wealth?
 
 ### Overview
 We used publicly available secondary data from the World Bank Open Data Portal and the OECD Data Portal, merging socioeconomic indicators (GDP per capita, current health expenditure as a percentage of GDP) with health system metrics (doctors per capita). The dataset spans European countries over multiple years (2000–2024, with GDP data extending to 1960). Our approach involved data cleaning, standardization, and integration using country and year identifiers, followed by exploratory data analysis and visualization. We generated scatter plots, calculated correlation coefficients, and constructed a correlation matrix to examine relationships between economic capacity, healthcare investment, and healthcare access. All data preprocessing and analysis are seen in `data/` and `analysis/` folders.
@@ -29,7 +28,7 @@ We used publicly available secondary data from the World Bank Open Data Portal a
 
 - **High-income countries can achieve strong access with modest spending:** Luxembourg and Ireland, for example, maintain high doctors-per-capita levels despite allocating only about 5.6–5.8% of GDP to health, pointing to potential system efficiencies.
 
-These findings suggest that while economic wealth facilitates better healthcare access, policy decisions and institutional efficiency may be equally important for achieving strong health outcomes—a nuance relevant to understanding regional disparities across Europe.
+These findings suggest that while economic wealth facilitates better healthcare access, policy decisions and institutional efficiency may be equally important for achieving strong health outcomes-a nuance relevant to understanding regional disparities across Europe.
 
 ---
 
