@@ -228,7 +228,7 @@ The general state of the data after cleaning is **good**, but several important 
 
 ## Findings
 
-> Analysis and visualizations were generated using:
+> Data visualizations were generated using:
 > [`Analysis/Data_Analysis.ipynb`](Analysis/Data_Analysis.ipynb)
 
 This analysis reflects key stages of the data lifecycle, including data integration, cleaning, and exploratory analysis (Module 2, Module 7, Module 10). By combining secondary data sources from the World Bank and OECD (Module 4), we created a unified dataset to examine relationships between socioeconomic indicators and healthcare access across EU countries. The analysis focuses on GDP per capita, health spending, and doctors per capita, using both visualizations and correlation metrics to support each finding.
@@ -236,7 +236,7 @@ This analysis reflects key stages of the data lifecycle, including data integrat
 ---
 
 ### **Finding 1: Wealth Is Strongly Associated with Healthcare Access**
-A strong positive relationship exists between GDP per capita and doctors per capita, with a correlation coefficient of approximately **0.78**. This indicates that wealthier countries tend to have greater access to healthcare resources, as measured by physician availability. The scatter plot shows a clear upward trend, where countries with higher GDP levels consistently exhibit higher numbers of doctors per capita.
+There is a strong positive relationship between GDP per capita and doctors per capita, with a correlation coefficient of approximately **0.78**. This indicates that wealthier countries tend to have greater access to healthcare resources, as measured by physician availability. The scatter plot shows a clear upward trend, where countries with higher GDP levels consistently exhibit higher numbers of doctors per capita.
 
 This finding suggests that overall economic capacity plays a significant role in shaping healthcare access, likely due to increased funding availability, infrastructure, and institutional development in wealthier nations.
 
@@ -254,7 +254,7 @@ This suggests that simply allocating a higher proportion of GDP to healthcare do
 *Figure 2: Relationship between health spending and doctors per capita.*
 
 ### **Finding 3: Wealth Does Not Drive Healthcare Investment Decisions**
-There is virtually **no correlation (0.02)** between GDP per capita and health spending as a percentage of GDP. The scatter plot shows no clear pattern, with both low- and high-income countries exhibiting a wide range of health spending levels.
+There is virtually **no correlation (0.02)** between GDP per capita and health spending as a percentage of GDP. The scatter plot shows no clear pattern, with both low and high-income countries exhibiting a wide range of health spending levels.
 
 This indicates that wealthier countries do not necessarily allocate a larger share of their economic resources to healthcare. Instead, healthcare investment appears to reflect national policy priorities, institutional structures, and strategic decisions rather than overall economic wealth alone.
 
@@ -316,13 +316,13 @@ Finally, further investigation into outlier countries, such as Luxembourg and Ir
 
 ## Challenges
 
-Throughout this project, we encountered several challenges that directly relate to key concepts in data curation and the data lifecycle (Module 1, Module 2). While many of these issues were expected when working with multiple real-world datasets, actually dealing with them in practice required more time and iteration than we initially anticipated.
+Throughout this project, we encountered several challenges that directly relate to key concepts in data curation and the data lifecycle (Module 1, Module 2). While many of these issues were expected when working with multiple real-world datasets, actually dealing with them required more time and problem solving than we initially anticipated.
 
-One of the primary challenges was addressing data heterogeneity during integration (Module 7). The World Bank and OECD datasets differed significantly in structure, formatting, and variable naming conventions. Even when the datasets were measuring similar concepts, they were often labeled differently or stored in different formats, which made direct merging difficult. We had to spend a considerable amount of time aligning schemas and transforming both datasets into a consistent structure. This process highlighted challenges related to schema mapping and semantic ambiguity (Module 7), where similar indicators do not always translate cleanly across sources. In some cases, we had to make judgment calls about which variables were truly comparable, which introduced a level of subjectivity into the integration process.
+One of the primary challenges was addressing data heterogeneity during integration (Module 7). The World Bank and OECD datasets differed significantly in structure, formatting, and variable naming. Even when the datasets were measuring similar concepts, they were often labeled differently or stored in different formats, which made direct merging difficult. We had to spend a considerable amount of time aligning schemas and transforming both datasets into a consistent structure. This process highlighted challenges related to schema mapping and semantic ambiguity (Module 7), where similar indicators do not always appear uniformly across sources. In some cases, we had to make judgment calls about which variables were truly comparable, which introduced a level of subjectivity into the integration process.
 
 Another major challenge involved ensuring data quality across multiple dimensions (Module 10). Because we were combining datasets from different sources, inconsistencies naturally emerged. We encountered missing values, differences in country naming conventions, and occasional discrepancies in reported values. To address this, we went through multiple rounds of data cleaning, including identifying missing or invalid entries, standardizing formats, and verifying the accuracy of merged records. This process reflects key components of data cleaning workflows such as discovery, error detection, and repair (Module 10). Even after cleaning, there was still some uncertainty about whether all inconsistencies had been fully resolved, which is a common issue when working with large, secondary datasets.
 
-The restriction to overlapping years also introduced a timeliness constraint (Module 10). Since the World Bank and OECD datasets did not fully overlap in terms of time coverage, we had to limit our analysis to a smaller time window of four years. While this decision improved consistency and comparability, it reduced the overall depth of our analysis and limited our ability to observe long-term trends. This tradeoff between data consistency and temporal coverage was something we had to carefully consider.
+The restriction to overlapping years also introduced a timeliness constraint (Module 10). Since the World Bank and OECD datasets did not fully overlap in terms of time coverage, we had to limit our analysis to a smaller time window of four years, rather than the 10 years we initially intended on. While this decision improved consistency and comparability, it reduced the overall depth of our analysis and limited our ability to observe long-term trends. This tradeoff between data consistency and temporal coverage was something we had to carefully consider.
 
 We also faced challenges related to reproducibility and transparency (Module 1, Module 14). Transitioning from exploratory work in a notebook environment to a structured Python script required us to rethink how our code was organized. In the notebook, it was easy to run cells out of order or rely on intermediate variables, but creating a reproducible pipeline meant that everything had to be clearly defined and executable from start to finish. This aligns with the concept of computational reproducibility, where results must be consistently reproducible using the same data, code, and environment (Module 1). Getting to that point required restructuring our workflow and being more intentional about how we wrote and documented our code.
 
