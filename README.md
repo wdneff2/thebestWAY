@@ -165,7 +165,7 @@ This dataset is directly relevant to the first research question, which investig
 ## Data Quality
 
 ### Assessment Approach
-We assessed data quality and performed cleaning using **OpenRefine**, a powerful open-source tool for data wrangling and transformation. The complete cleaning workflows are documented in the following JSON files in the `clean/` folder in the repository
+We assessed data quality and performed cleaning using **OpenRefine**, a powerful open-source tool for data wrangling and transformation. The complete cleaning workflows are documented in the following JSON files in the `data/clean/` folder in the repository
 
 Our assessment process involved the following steps:
 
