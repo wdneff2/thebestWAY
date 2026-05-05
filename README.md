@@ -368,7 +368,6 @@ For this project, we used integrated data from the World Bank World Development 
    4. Doctors per capita
 
 Our repository is structured as follows:
-#### Project Structure
 
 - **`project/`** - Root directory
   - **`Analysis/`** - Jupyter notebook and data subdirectories
