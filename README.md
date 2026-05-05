@@ -368,7 +368,25 @@ For this project, we used integrated data from the World Bank World Development 
    4. Doctors per capita
 
 Our repository is structured as follows:
-project/ ├── Analysis/ │ ├── Data Analysis.ipynb │ ├── data/ │ ├── raw/ │ │ ├── gdp_per_capita_raw.csv │ │ ├── health_expenditure_raw.csv │ │ ├── health_spending_raw.csv │ │ └── doctors_per_capita_raw.csv │ │ │ ├── clean/ │ │ ├── gdp_per_capita.csv │ │ ├── health_expenditure.csv │ │ ├── health_spending.csv │ │ ├── doctors_per_capita.csv │ │ └── README.md │ │ │ ├── merged/ │ │ ├── merged_dataset.csv │ │ └── README.md │ └── README.md
+#### Project Structure
+
+- **`project/`** - Root directory
+  - **`Analysis/`** - Jupyter notebook and data subdirectories
+    - `Data Analysis.ipynb`
+    - **`data/`**
+      - **`raw/`** - Original, unmodified data
+        - `gdp_per_capita_raw.csv`
+        - `health_expenditure_raw.csv`
+        - `health_spending_raw.csv`
+        - `doctors_per_capita_raw.csv`
+      - **`clean/`** - Processed, analysis-ready data
+        - `gdp_per_capita.csv`, `health_expenditure.csv`, `health_spending.csv`, `doctors_per_capita.csv`
+        - `README.md` (documentation for clean data)
+      - **`merged/`** - Combined dataset
+        - `merged_dataset.csv`
+        - `README.md` (documentation for merged data)
+      - `README.md` (overview of `data/` folder)
+    - `README.md` (overview of `Analysis/` folder)
 
 The datasets used were from the World Bank World Development Indicators and the OECD Data Portal. From the World Bank World Development Indicators, we used:
 1. GDP per capita
