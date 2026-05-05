@@ -1,3 +1,9 @@
+fix rendered repository thing ("Our repository is structured as follows...")
+syntax errors
+insert code in the codeblock on markdown - you use "`" for that
+workflow file or why we couldnt have one
+requirements.txt, hashfile, license sciprt used for data acquisition - ensure all requiremnets are there
+
 # Euros and Years: Does Money Buy a Longer Life in Europe?
 
 ## Contributors
