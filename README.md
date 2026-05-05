@@ -393,6 +393,7 @@ The cleaning steps are as follows:
 For merging our datasets, we used Python, and our integration can be performed in: Analysis/Data Analysis.ipynb.
 
 Merge:
+```
 import pandas as pd
 
 gdp = pd.read_csv("gdp_per_capita.csv")
@@ -407,16 +408,19 @@ df = df.merge(doctors, on=["country", "year"], how="inner")
 df.to_csv("merged_dataset.csv", index=False)
 
 df.head()
+```
 
 The shared key we used to merge the datasets was "country" + "year". We did inner joins to only keep overlapping observations. You can find the final merged output in: data/merged/merged_dataset.csv
 
 ### Validation
 To validate your dataset, there are a couple of sanity checks that should be performed to make sure you have correctly filtered your data. We used:
 
+```
 df.shape
 df.isnull().sum()
 df["country"].nunique()
 df["year"].nunique()
+```
 
 The results from above should be as follows:
    1. 98 rows
